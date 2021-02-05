@@ -1,0 +1,23 @@
+body{
+  background-color: black
+}
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+
+p{
+  position: absolute;
+  color: white;
+  font-family: helvetica;
+  transform: rotate(90deg);
+  font-size: 100px;
+  margin-top: 340px;
+  margin-left: 275px;
+}
+
+.music{
+  position: sticky;
+  top: 0;
+}
