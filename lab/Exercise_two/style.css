@@ -1,15 +1,13 @@
 .one{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 30px;
 
 }
 
 .two{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 20px;
 }
 
@@ -184,8 +182,7 @@
 
 .three{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 30px;
 }
 .rockme{
@@ -194,8 +191,8 @@
 
 .four{
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  justify-content: space-between;
 
 }
 
@@ -207,13 +204,13 @@
 .five{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 30px;
 }
 .six{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 30px;
 }
 .sharpie{
@@ -222,7 +219,7 @@
 .seven{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   font-size: 30px;
 }
 /* .shape{
@@ -241,3 +238,13 @@
   margin-bottom: 400px
 
 } */
+
+img{
+  border-radius: 40%
+}
+
+h1{
+  text-align: center;
+  font-family: helvetica;
+  margin-bottom:100px
+}
