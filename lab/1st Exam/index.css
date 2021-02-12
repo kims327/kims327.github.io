@@ -1,0 +1,126 @@
+body{
+  font-size: 19px;
+  background: rgb(255,255,142,0.3);
+  }
+
+#one{
+  width: 500px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.image{
+  display: block;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list{
+  text-align: center;
+  font-family: graphie;
+  font-weight: 300;
+}
+
+ul{
+  list-style: none;
+  padding: 0px;
+}
+
+blockquote{
+  text-align: right;
+  margin: 0;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  font-family: graphie;
+  font-weight: 300;
+}
+table, th, td {
+  border: 0.5px solid green;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: graphie;
+  font-weight: 300;
+}
+
+th{
+  background-color: #E0FFE0
+}
+
+.yellow{
+  background-color: #F8FFB4
+}
+
+.pink{
+  background-color: #FFE2D8
+}
+table{
+  color: #734eff;
+}
+
+
+h3{
+  text-align: center;
+  font-family: graphie, sans-serif;
+  font-size: 60px;
+  margin: 10px;
+  color: #734eff;
+}
+
+.ordered{
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px;
+  font-family: graphie;
+  font-weight: 300;
+}
+
+ol{
+  text-align: left;
+  list-style-position: inside;
+}
+
+div{
+  color: #734eff;
+}
+
+#two{
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  border: 3px solid #734eff;
+  float: left;
+  margin: 5px;
+
+}
+
+.imagewrap{
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+p{
+  font-family: graphie;
+  font-weight: 300;
+  display: block;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+}
+
+a:hover{
+  color: green;
+  background-color: #F8FFB4;
+  border-radius: 40%
+}
+a{
+  text-decoration: none
+}
