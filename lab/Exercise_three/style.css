@@ -1,0 +1,54 @@
+.heading{
+font-family: ivypresto-display, serif;
+font-weight: 700;
+font-style: italic;
+font-size: 200px;
+text-align: center;
+}
+
+#title{
+  margin-bottom: 0px
+}
+
+.container{
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  height: 100vh;
+  height: 100px
+
+}
+
+body{
+  background-color: #f1ffd1;
+  font-family: ivypresto-display, serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #db1dc5
+}
+
+
+.two{
+font-family: ivypresto-display, serif;
+font-weight: 700;
+font-style: italic;
+font-size: 100px;
+/* border: 3px solid red; */
+text-align: center;
+
+}
+
+#nyc{
+  margin: 0px
+}
+
+.jan{
+  text-align: center;
+font-size: 2rem;
+}
