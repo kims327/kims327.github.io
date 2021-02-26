@@ -1,0 +1,132 @@
+
+body{
+  background-color: beige
+}
+.container{
+  display: flex;
+justify-content: center
+}
+#shape{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: shape;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+#shape2{
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  animation-name: shape2;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+#shape3{
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  animation-name: shape3;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes shape {
+  0%   {background-color: blue; width: 200px}
+  25%  {background-color: goldenrod;width: 100px}
+  50%  {background-color: pink;width: 300px}
+  100% {background-color: green;}
+}
+
+@keyframes shape2 {
+  0%   {background-color: blue; }
+  25%  {background-color: goldenrod;height: 100vh}
+  50%  {background-color: pink;}
+  100% {background-color: green;}
+}
+
+@keyframes shape3 {
+  0%   {background-color: blue; border-radius: 20%}
+  25%  {background-color: goldenrod;}
+  50%  {background-color: pink;border-radius: 50%}
+  100% {background-color: green;}
+}
+
+
+
+
+@media only screen and (min-width: 1025px) {
+  #shape{
+    display: flex
+  }
+  #shape2{
+    display: none
+  }
+  #shape3{
+    display: none
+  }
+}
+
+
+@media only screen and (max-width: 1024px){
+  #shape{
+    display: none;
+  }
+  #shape2{
+    display: flex;
+  }
+  #shape3{
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 767px){
+  #shape{
+    display: none
+  }
+  #shape2{
+    display: none
+  }
+  #shape3{
+    display: flex;
+
+  }
+}
+
+
+
+
+
+/*
+@media only screen and (max-width: 600px) {
+  #shape{
+    display: none;
+  }
+  #shape2{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 992px){
+  #shape{
+    display: none;
+  }
+
+  #shape3{
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+
+  #shape2{
+    display: none;
+  }
+  #shape3{
+    display: none;
+  }
+} */

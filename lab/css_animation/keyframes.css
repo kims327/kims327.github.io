@@ -1,0 +1,46 @@
+
+.droplet {
+margin: 50px;
+width: 200px;
+height: 200px;
+position: relative;
+background-color: grey;
+/* create droplet shape */
+border-radius: 50%;
+border-top-right-radius: 0;
+transform: rotate(-45deg);
+/* create animation keyframe name */
+animation-name: droplets;
+animation-duration: 4s;
+animation-iteration-count: infinite;
+animation-delay: 1s;
+animation-timing-function: ease-in;
+}
+
+@keyframes droplets {
+0% {background-color: hotpink; top: 50px; }
+25% {background-color: rgb(159, 9, 84); top: 150px; }
+50% {background-color: rgb(77, 4, 40); top: 300px; }
+75% {background-color: rgb(130, 112, 121); top: 500px; }
+100% {background-color: hotpink; top: 800px; border-radius: 0 50% 75% 50% }
+}
+
+.droplet-2{
+  margin-left: 500px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-color: goldenrod;
+  border-radius: 50%;
+  animation-name: shape;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-delay: 0.5s;
+  animation-timing-function: ease-out;
+}
+
+
+@keyframes shape {
+0% {background-color: goldenrod; top: 50px; }
+100% {background-color: hotpink; top: 480px; border-radius: 0 0 0 0; transform: rotate(180deg);}
+}

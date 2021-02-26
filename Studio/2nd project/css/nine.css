@@ -1,0 +1,61 @@
+.content{
+  max-width: 320px;
+  text-align: center;
+
+}
+
+.container{
+  /* border: 1px solid; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: kepler-std-display, serif;
+font-weight: 400;
+font-style: normal;
+}
+
+@media only screen and (min-width: 1200px) {
+  #text{
+    display: flex
+  }
+  #text_two{
+    display: none
+  }
+  #text_three{
+    display: none
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #text{
+    display: flex;
+  }
+  #text_two{
+    display: none;
+  }
+  #text_three{
+    display: none
+  }
+}
+@media only screen and (min-width: 892px) {
+  #text{
+    display: none;
+  }
+  #text_two{
+    display: none;
+  }
+  #text_three{
+    display: flex
+  }
+}
+@media only screen and (max-width: 600px) {
+  #text{
+    display: none;
+  }
+  #text_two{
+    display: none;
+  }
+  #text_three{
+    display: none
+  }
+}

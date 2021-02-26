@@ -1,0 +1,33 @@
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 700px;
+  font-family: kepler-std-display, serif;
+font-weight: 400;
+font-style: normal;
+text-justify:inter-word;
+word-spacing: 0.1em
+}
+
+
+.sticky{
+  font-family: ivypresto-display, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 60px;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+
+}
+#h1{
+    margin-top: 0px;
+}

@@ -1,0 +1,28 @@
+.container{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  max-width: 500px;
+  font-family: kepler-std-display, serif;
+font-weight: 400;
+font-style: normal;
+word-spacing: 0.1em
+}
+#h1{
+  font-family: ivypresto-display, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 30px;
+  max-width: 900px;
+  text-align: right;
+  margin-left: 50%;
+  height: 100vh
+}
+
+#details{
+  text-align:left;
+  margin-right: 70%
+}

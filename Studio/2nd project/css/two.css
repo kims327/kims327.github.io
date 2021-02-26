@@ -1,0 +1,292 @@
+#text{
+  max-width: 350px;
+}
+p{
+  text-align: center
+}
+.container{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: kepler-std-display, serif;
+font-weight: 400;
+font-style: normal;
+}
+
+.container2{
+  height: 200vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: kepler-std-display, serif;
+font-weight: 400;
+font-style: normal;
+}
+
+@media only screen and (max-width: 699px){
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  #tree8{
+    display: none
+  }
+  #tree9{
+    display: flex
+  }
+}
+@media only screen and (min-width: 699px) (max-width: 799px){
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  #tree8{
+    display: flex
+  }
+  #tree9{
+    display: none
+  }
+}
+@media only screen and (min-width: 800px) (max-width: 899px){
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: flex
+  }
+  #tree8{
+    display: none
+  }
+  #tree9{
+    display: none
+  }
+}
+@media only screen and (min-width: 900px) (max-width: 999px){
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: flex
+  }
+  #tree7{
+    display: none
+  }
+  #tree8{
+    display: none
+  }
+  #tree9{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 1000px) (max-width: 1199px){
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: flex
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  #tree8{
+    display: none
+  }
+  #tree9{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 1200px)(max-width: 1299px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: flex
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  #tree8{
+    display: none
+  }
+  #tree9{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 1300px)(max-width: 1399px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: flex
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  #tree8{
+    display: none
+  }
+  #tree9{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 1400px)(max-width: 1499px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: flex
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  #tree8{
+    display: none
+  }
+  #tree9{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 1500px) {
+  #tree{
+    display: flex
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  #tree8{
+    display: none
+  }
+  #tree9{
+    display: none
+  }
+}
