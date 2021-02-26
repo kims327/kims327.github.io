@@ -2,6 +2,13 @@
 body{
   background-color: beige
 }
+p{
+  position: absolute;
+  font-size: 90px;
+  font-family: sans-serif;
+  color: beige;
+  margin: 0px
+}
 .container{
   display: flex;
 justify-content: center
@@ -24,34 +31,37 @@ justify-content: center
   animation-iteration-count: infinite;
 }
 #shape3{
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   background-color: blue;
   animation-name: shape3;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
+
+
 }
 
 
 @keyframes shape {
-  0%   {background-color: blue; width: 200px}
-  25%  {background-color: goldenrod;width: 100px}
-  50%  {background-color: pink;width: 300px}
-  100% {background-color: green;}
+  0%   {background-color: blue; width: 0px;}
+  25%  {background-color: goldenrod;width: }
+  50%  {background-color: pink;width: 700px}
+  100% {background-color: green;width: 0px}
 }
 
 @keyframes shape2 {
-  0%   {background-color: blue; }
-  25%  {background-color: goldenrod;height: 100vh}
-  50%  {background-color: pink;}
-  100% {background-color: green;}
+  0%   {background-color: blue; height: 0px}
+
+  50%  {background-color: pink;height: 100vh}
+  100% {background-color: purple; height: 0px}
 }
 
 @keyframes shape3 {
-  0%   {background-color: blue; border-radius: 20%}
-  25%  {background-color: goldenrod;}
-  50%  {background-color: pink;border-radius: 50%}
-  100% {background-color: green;}
+  0%   {background-color: blue; border-radius: 50% 75% 50% 0 }
+  25%  {background-color: goldenrod;border-radius:  75% 50% 0 50%}
+  50%  {background-color: pink;border-radius: 50% 0 50% 75% }
+  100% {background-color: green;border-radius: 0 50% 75% 50%}
+
 }
 
 
@@ -79,6 +89,9 @@ justify-content: center
   }
   #shape3{
     display: none;
+  }
+  #alice{
+    display: none
   }
 }
 
