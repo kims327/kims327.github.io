@@ -13,7 +13,33 @@ font-style: normal;
 text-justify:inter-word;
 word-spacing: 0.1em
 }
+.off_paper{
+  position: relative;
+  top:450px;
+  left: 65%;
 
+}
+
+#page{
+margin-bottom: 400px
+}
+
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid;
+}
+
+.arrow{
+display: flex;
+justify-content: flex-end;
+
+}
 
 .sticky{
   font-family: ivypresto-display, serif;
@@ -31,4 +57,21 @@ word-spacing: 0.1em
 }
 #h1{
     margin-top: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+#img_one{
+  display:none
+}
+#img_two{
+  display: flex
+}
+}
+@media only screen and (min-width: 600px) {
+#img_one{
+  display:flex
+}
+#img_two{
+  display: none
+}
 }

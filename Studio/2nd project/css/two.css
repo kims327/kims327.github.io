@@ -14,7 +14,7 @@ font-style: normal;
 text-align: center;
 }
 .middle{
-  line-height: 3em;
+  line-height: 6em;
 }
 
 #intro{
@@ -349,12 +349,7 @@ font-style: normal;
   #tree7{
     display: flex
   }
-  #tree8{
-    display: none
-  }
-  #tree9{
-    display: none
-  }
+
 }
 
 
@@ -381,12 +376,7 @@ font-style: normal;
   #tree7{
     display: none
   }
-  #tree8{
-    display: none
-  }
-  #tree9{
-    display: none
-  }
+
 }
 
 
@@ -412,12 +402,7 @@ font-style: normal;
   #tree7{
     display: none
   }
-  #tree8{
-    display: none
-  }
-  #tree9{
-    display: none
-  }
+
 }
 
 
@@ -443,12 +428,7 @@ font-style: normal;
   #tree7{
     display: none
   }
-  #tree8{
-    display: none
-  }
-  #tree9{
-    display: none
-  }
+
 }
 @media only screen and (min-width: 892px) {
   #tree{
@@ -472,12 +452,7 @@ font-style: normal;
   #tree7{
     display: none
   }
-  #tree8{
-    display: none
-  }
-  #tree9{
-    display: none
-  }
+
 }
 @media only screen and (min-width: 1024px) {
   #tree{
@@ -501,12 +476,7 @@ font-style: normal;
   #tree7{
     display: none
   }
-  #tree8{
-    display: none
-  }
-  #tree9{
-    display: none
-  }
+
 }
 
 
@@ -532,10 +502,5 @@ font-style: normal;
   #tree7{
     display: none
   }
-  #tree8{
-    display: none
-  }
-  #tree9{
-    display: none
-  }
+
 }
