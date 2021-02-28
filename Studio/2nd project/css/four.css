@@ -18,10 +18,10 @@ word-spacing: 0.1em
 
 }
 p{
-  max-width: 600px
+  max-width: 500px
 }
 
-#ivypresto{
+.ivypresto{
   font-family: ivypresto-display, serif;
 font-weight: 100;
 font-style: italic;
@@ -48,4 +48,152 @@ font-size: 18px;
 font-style: normal;
 text-justify:inter-word;
 word-spacing: 0.1em
+}
+
+@media only screen and (max-width: 600px) {
+  #ivy{
+    display: none
+  }
+  #ivy2{
+    display: none
+  }
+  #ivy3{
+    display: none
+  }
+  #ivy4{
+    display: none
+  }
+  #ivy5{
+    display: none
+  }
+  #ivy6{
+    display: none
+  }
+  #ivy7{
+    display: flex
+  }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #ivy{
+    display: none
+  }
+  #ivy2{
+    display: none
+  }
+  #ivy3{
+    display: none
+  }
+  #ivy4{
+    display: none
+  }
+  #ivy5{
+    display: flex
+  }
+  #ivy6{
+    display: none
+  }
+  #ivy7{
+    display: none
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 800px) {
+  #ivy{
+    display: none
+  }
+  #ivy2{
+    display: none
+  }
+  #ivy3{
+    display: none
+  }
+  #ivy4{
+    display: flex
+  }
+  #ivy5{
+    display: none
+  }
+  #ivy6{
+    display: none
+  }
+  #ivy7{
+    display: none
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1000px) {
+  #ivy{
+    display: none
+  }
+  #ivy2{
+    display: none
+  }
+  #ivy3{
+    display: flex
+  }
+  #ivy4{
+    display: none
+  }
+  #ivy5{
+    display: none
+  }
+  #ivy6{
+    display: none
+  }
+  #ivy7{
+    display: none
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #ivy{
+    display: none
+  }
+  #ivy2{
+    display: flex
+  }
+  #ivy3{
+    display: none
+  }
+  #ivy4{
+    display: none
+  }
+  #ivy5{
+    display: none
+  }
+  #ivy6{
+    display: none
+  }
+  #ivy7{
+    display: none
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+#ivy{
+  display: flex
+}
+#ivy2{
+  display: none
+}
+#ivy3{
+  display: none
+}
+#ivy4{
+  display: none
+}
+#ivy5{
+  display: none
+}
+#ivy6{
+  display: none
+}
+#ivy7{
+  display: none
+}
 }

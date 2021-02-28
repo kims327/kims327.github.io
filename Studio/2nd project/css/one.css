@@ -85,7 +85,31 @@ img{
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
+  #text{
+    display: none
+  }
+  #text_two{
+    display: none
+  }
+  #text_three{
+    display: none
+  }
+  #text_four{
+    display: none
+  }
+  #text_five{
+    display: none
+  }
+  #text_six{
+    display: flex
+  }
+  #img_one{
+    display: none
+  }
+
+}
+@media only screen and (min-width: 320px) {
   #text{
     display: none
   }
