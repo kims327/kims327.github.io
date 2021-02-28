@@ -72,7 +72,9 @@ word-spacing: 0.1em
   #ivy7{
     display: flex
   }
-
+  #img_one{
+    display: none
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -96,6 +98,9 @@ word-spacing: 0.1em
     display: none
   }
   #ivy7{
+    display: none
+  }
+  #img_two{
     display: none
   }
 }
@@ -123,6 +128,9 @@ word-spacing: 0.1em
   #ivy7{
     display: none
   }
+  #img_two{
+    display: none
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -148,6 +156,9 @@ word-spacing: 0.1em
   #ivy7{
     display: none
   }
+  #img_two{
+    display: none
+  }
 }
 @media only screen and (min-width: 1200px) {
   #ivy{
@@ -169,6 +180,9 @@ word-spacing: 0.1em
     display: none
   }
   #ivy7{
+    display: none
+  }
+  #img_two{
     display: none
   }
 }
@@ -194,6 +208,9 @@ word-spacing: 0.1em
   display: none
 }
 #ivy7{
+  display: none
+}
+#img_two{
   display: none
 }
 }

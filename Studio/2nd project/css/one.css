@@ -85,7 +85,7 @@ img{
 
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 375px) {
   #text{
     display: none
   }
@@ -104,12 +104,10 @@ img{
   #text_six{
     display: flex
   }
-  #img_one{
-    display: none
-  }
+
 
 }
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 375px) {
   #text{
     display: none
   }
@@ -157,6 +155,9 @@ img{
   #img_two{
     display: none
   }
+  #img_one{
+    display: flex
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -181,6 +182,9 @@ img{
   }
   #img_two{
     display: none
+  }
+  #img_one{
+    display: flex
   }
 }
 
@@ -207,6 +211,9 @@ img{
   #img_two{
     display: none
   }
+  #img_one{
+    display: flex
+  }
 }
 @media only screen and (min-width: 1024px) {
   #text{
@@ -229,6 +236,9 @@ img{
   }
   #img_two{
     display: none
+  }
+  #img_one{
+    display: flex
   }
 }
 
@@ -254,5 +264,8 @@ img{
   }
   #img_two{
     display: none
+  }
+  #img_one{
+    display: flex
   }
 }
