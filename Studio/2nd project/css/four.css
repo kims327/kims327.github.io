@@ -75,6 +75,7 @@ word-spacing: 0.1em
   #img_one{
     display: none
   }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -213,4 +214,5 @@ word-spacing: 0.1em
 #img_two{
   display: none
 }
+
 }

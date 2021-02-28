@@ -1,0 +1,334 @@
+/* .book{
+  border: 1px solid;
+  width: 100px;
+  height: 90vh;
+} */
+body{
+  margin: 0px
+}
+.book{
+  height: 100vh;
+  display: flex;
+  text-align: right;
+  transform: rotate(-180deg);
+}
+/* #container{
+  display: flex;
+  width: 100%;
+  margin-top: 80px;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: baseline;
+} */
+
+.flex{
+  display: flex;
+  justify-content:center;
+}
+
+p{
+  margin: 0px;
+  font-family: ivypresto-display, serif;
+  font-weight: 400;
+  font-style: normal;
+font-size: 90px;
+text-align: left;
+writing-mode: vertical-rl;
+text-orientation:sideways;
+}
+#one{
+  position: relative
+}
+#two{
+  position: relative
+}
+#three{
+  position: relative
+}
+#four{
+  position: relative
+}
+#five{
+  position: relative
+}
+#six{
+  position: relative
+}
+#seven{
+  position: relative
+}
+#eight{
+  position: relative
+}
+#nine{
+  position: relative
+}
+
+a{
+text-decoration: none;
+color: black
+}
+a:visited{
+  color: black
+}
+
+a:hover{
+  color: gray
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 900px) {
+
+  #one{
+    position: relative;
+    top: 390px;
+    transform: rotate(90deg);
+    right: 700px}
+  #two{
+    transform: rotate(90deg);
+    right: 550px;
+    top:130px
+    }
+    #eight{
+      position: relative;
+      top: 210px;
+      transform: rotate(90deg);
+
+      left:100px
+    }
+    #nine{
+      position: relative;
+      top: 290px;
+      transform: rotate(90deg);
+      left: 300px}
+  }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 900px) {
+  #one{
+    position: relative;
+    top: 400px;
+    transform: rotate(85deg);
+    right: 480px}
+  #two{
+    transform: rotate(120deg);
+    right: 350px;
+    top:20px
+    }
+    #eight{
+      position: relative;
+      top: 130px;
+      transform: rotate(-50deg);
+      left:370px
+    }
+    #nine{
+      position: relative;
+      top: 240px;
+      transform: rotate(-50deg);
+      left: 500px}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1100px) {
+
+  #one{
+    position: relative;
+    top: 300px;
+    transform: rotate(85deg);
+    right: 450px}
+  #two{
+    transform: rotate(80deg);
+    right: 350px;
+    top:200px
+    }
+    #eight{
+      position: relative;
+      top: 100px;
+      transform: rotate(-40deg);
+      left:300px
+    }
+    #nine{
+      position: relative;
+      top: 30px;
+      transform: rotate(-40deg);
+      left: 240px}
+}
+@media only screen and (min-width: 1200px) {
+  /* #one{
+  position:relative;
+  top: 500px;
+  transform: rotate(80deg);
+  } */
+  #one{
+    position: relative;
+    top: 280px;
+    transform: rotate(55deg);
+    right: 400px}
+  #two{
+    transform: rotate(20deg);
+    right: 50px;
+    top:0px
+    }
+    #eight{
+      position: relative;
+      top: 0;
+      transform: rotate(-20deg);
+      left:130px
+    }
+    #nine{
+      position: relative;
+      top: 0;
+      transform: rotate(-30deg);
+      left: 170px}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1400px) {
+#one{
+transform: rotate(15deg);
+top: 0px;
+
+right: 0px
+}
+#two{
+transform: rotate(10deg);
+right: 0px;
+top:0px
+}
+#eight{
+  position: relative;
+  top: 0;
+  transform: rotate(0deg);
+  left:0
+}
+#nine{
+transform: rotate(-15deg);
+position: relative;
+top: 0;
+
+left: 0}
+}
+/* @media only screen and (min-width: 1500px) {
+#ivy{
+  display: flex
+}
+#ivy2{
+  display: none
+}
+#ivy3{
+  display: none
+}
+#ivy4{
+  display: none
+}
+#ivy5{
+  display: none
+}
+#ivy6{
+  display: none
+}
+#ivy7{
+  display: none
+}
+#img_two{
+  display: none
+} */
+
+
+/* a:hover{
+
+} */
+/* a:hover{
+  transform: rotate(-25deg);
+} */
+/* #one{
+  transform: rotate(-90deg);
+  font-size: 40px;
+} */
+
+  /* #container{
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    justify-content: space-between;
+  }
+
+  /* a:hover{
+    transform: rotate(3deg);
+  } */
+
+  /* #one{
+    position: absolute;
+    transform: rotate(-170deg);
+    margin-left: 100px;
+    margin-top: 200px;
+    height: 70%;
+
+  }
+
+  #two{
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: 400px;
+    margin-top: 500px;
+    height: 70%;
+  }
+  #three{
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: 450px;
+    margin-top: 400px;
+    height: 70%
+  }
+  #four{
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: 300px;
+    margin-top: 300px;
+    height: 70%
+  }
+  #five{
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: 240px;
+    margin-top: 200px;
+    height: 70%
+  }
+  #six{
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: 70px;
+    margin-top: 100px;
+    height: 70%
+  }
+  #seven{
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: 40px;
+    margin-top: 0px;
+    height: 70%
+  }
+  #eight{
+    position: absolute;
+    transform: rotate(-90deg);
+    margin-left: 0px;
+    margin-top: 0px;
+    height: 70%
+  }
+  #nine{
+    position: relative;
+    /* transform: rotate(-170deg); */
+    margin-left: 0px;
+    margin-right: 100px
+    /* margin-top: 200px; */
+    /* height: 70%; */
+  } */
+
+
+/*
+body{
+  border: 3px solid;
+  width: 100vh
+} */
