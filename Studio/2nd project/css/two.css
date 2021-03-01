@@ -9,12 +9,12 @@
   align-items: center;
   font-family: kepler-std-display, serif;
 font-weight: 400;
-font-size: 18px;
+font-size: 1.4em;
 font-style: normal;
 text-align: center;
 }
 .middle{
-  line-height: 6em;
+  line-height: 5.5em;
 }
 
 #intro{

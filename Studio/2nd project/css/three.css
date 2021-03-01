@@ -1,14 +1,23 @@
-.container{
+body{
+  width: 100vw
+  }
+  .wrapper{
+  display: block;
+  justify-content: center;
+  align-items: center;
+
+  }
+  .container{
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: auto;
-  max-width: 700px;
+  max-width: 600px;
   font-family: kepler-std-display, serif;
 font-weight: 400;
-font-size: 18px;
+font-size: 1.5em;
 font-style: normal;
 text-justify:inter-word;
 word-spacing: 0.1em
@@ -16,8 +25,9 @@ word-spacing: 0.1em
 .off_paper{
   position: relative;
   top:450px;
-  left: 65%;
-
+  left: 60%;
+  font-size: 1.5em;
+  max-width: 300px
 }
 
 #page{
@@ -33,6 +43,7 @@ margin-bottom: 400px
   width: 50vw;
   height: 50vh;
   border: 1px solid;
+  font-size: 1.5em
 }
 
 .arrow{
@@ -45,7 +56,7 @@ justify-content: flex-end;
   font-family: ivypresto-display, serif;
   font-weight: 600;
   font-style: normal;
-  font-size: 60px;
+  font-size: 3.5em;
 
   display: flex;
   justify-content: center;
@@ -58,20 +69,218 @@ justify-content: flex-end;
 #h1{
     margin-top: 0px;
 }
+@media only screen and (min-width: 320px) {
+  #img_one{
+    display:none
+  }
+  #img_two{
+    display: none
+  }
+  .off_paper{
 
-@media only screen and (max-width: 600px) {
+      position: relative;
+      top:400px;
+      left: 45%;
+      font-size: 1em;
+      max-width: 180px
+  }
+  .container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 50vw;
+    height: 30vh;
+    border: 1px solid green;
+    font-size: 1em;
+
+  }
+  #page{
+  margin-bottom: 200px
+  }
+.container{
+  font-size: 1em;
+  max-width: 300px;
+  margin-top: 200px
+}
+.sticky{
+  font-family: ivypresto-display, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1em;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+}
+
+}
+}
+
+@media only screen and (min-width: 375px) {
+  #img_one{
+    display:none
+  }
+  #img_two{
+    display: none
+  }
+  .off_paper{
+
+      position: relative;
+      top:400px;
+      left: 50%;
+      font-size: 1em;
+      max-width: 300px
+  }
+  .container2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    width: 50vw;
+    height: 50vh;
+    border: 1px solid green;
+    font-size: 1em
+  }
+.container{
+  font-size: 1em;
+  max-width: 600px
+
+}
+.sticky{
+  font-family: ivypresto-display, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2em;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+}
+#page{
+margin-bottom: 400px
+}
+}
+
+
+@media only screen and (min-width: 425px) {
+#img_one{
+  display:flex
+}
+#img_two{
+  display: none
+}
+.off_paper{
+  position: relative;
+  top:400px;
+  left: 50%;
+  font-size: 1.5em;
+  max-width: 300px
+}
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid green;
+  font-size: 1.5em
+}
+.container{
+  font-size: 1.5em;
+  max-width: 600px
+}
+.sticky{
+  font-family: ivypresto-display, serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3em;
+
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: sticky;
+  position: -webkit-sticky;
+  top:0;
+}
+#page{
+margin-bottom: 400px
+}
+}
+@media only screen and (min-width: 768px) {
 #img_one{
   display:none
 }
 #img_two{
   display: flex
 }
+.off_paper{
+
+    position: relative;
+    top:400px;
+    left: 50%;
+    font-size: 1.5em;
+    max-width: 300px
 }
-@media only screen and (min-width: 600px) {
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid red;
+  font-size: 1.5em
+}
+.container{
+  font-size: 1.5em
+}
+#page{
+margin-bottom: 400px
+}
+}
+
+@media only screen and (min-width: 1024px) {
 #img_one{
-  display:flex
+  display:none
 }
 #img_two{
-  display: none
+  display: flex
+}
+.off_paper{
+  position: relative;
+  top:400px;
+  left: 50%;
+  font-size: 1.5em;
+  max-width: 300px
+}
+.container2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: auto;
+  width: 50vw;
+  height: 50vh;
+  border: 1px solid blue;
+  font-size: 1.5em
+}
+.container{
+  font-size: 1.5em
+}
+#page{
+margin-bottom: 400px
 }
 }
