@@ -1,5 +1,5 @@
 .content{
-  max-width: 320px;
+  max-width: 500px;
   text-align: center;
 
 }
@@ -13,14 +13,55 @@
   font-family: kepler-std-display, serif;
 font-weight: 400;
 font-style: normal;
-font-size: 1.4em
+font-size: 1.5em;
+
 }
 
 img{
   position: absolute;
 
 }
+.wrapper{
+  display: block
+}
 
+.container2{
+
+}
+a{
+  color: black;
+  font-family: kepler-std-display, serif;
+font-weight: 700;
+font-style: normal;
+text-decoration: none
+}
+a:hover{
+  color: gray
+}
+.content2{
+  max-width: 500px;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: kepler-std-display, serif;
+font-weight: 400;
+font-style: normal;
+font-size: 1em;
+
+}
+#text1{
+  font-size: 0.9em
+}
+
+#text2{
+  font-size: 0.8em
+}
+
+#text3{
+  font-size: 0.7em
+}
 /* @media only screen and (min-width: 1200px){
   #text_two{
     display: none
@@ -268,7 +309,84 @@ here
     display: flex
   }
 } */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 320px) {
+  .wrapper{
+    display: none
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: none
+  }
+  }
+@media only screen and (min-width: 320px) {
+.wrapper{
+  display: none
+}
+#img_one{
+  display: none
+}
+#img_two{
+  display: none
+}
+}
+@media only screen and (min-width: 375px) {
+  .wrapper{
+    display: block
+  }
+  .content2{
+    display: none
+  }
+  #text{
+    display: none
+  }
+  #text_two{
+    display: none
+  }
+  #text_three{
+    display: none
+  }
+  #text_four{
+    display: none
+  }
+  #text_five{
+    display: none
+  }
+  #text_six{
+    display: flex
+  }
+  #img_one{
+    display: none
+  }
+}
+@media only screen and (min-width: 425px) {
+  #text{
+    display: none
+  }
+  #text_two{
+    display: none
+  }
+  #text_three{
+    display: none
+  }
+  #text_four{
+    display: none
+  }
+  #text_five{
+    display: none
+  }
+  #text_six{
+    display: flex
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: flex
+  }
+}
+@media only screen and (min-width: 600px) {
   #text{
     display: none
   }
@@ -293,7 +411,7 @@ here
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (min-width: 900px) {
   #text{
     display: none
   }
@@ -448,6 +566,7 @@ here
   #img_one{
     display: flex
   }
+
 }
 
 @media only screen and (min-width: 1400px) {
@@ -475,4 +594,5 @@ here
   #img_one{
     display: flex
   }
+
 }
