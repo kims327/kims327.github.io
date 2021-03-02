@@ -322,7 +322,8 @@ here
     display: none
   }
   #tex1-1{
-        max-width: 250px
+        max-width: 250px;
+        padding-left: 70px
   }
 }
 @media only screen and (min-width: 375px) {
@@ -337,7 +338,7 @@ here
   }
   #text1-1{
         max-width: 250px;
-        padding-left: 60px
+        padding-left: 70px
   }
   /* .wrapper2{
     max-width: 300px

@@ -415,6 +415,10 @@ font-style: normal;
     .middle{
       font-size: 0.98em
     }
+    #intro{
+      text-align: center;
+      max-width: 300px
+    }
   }
 /* @media only screen and (max-width: 600px) {
   #tree{
