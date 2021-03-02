@@ -121,7 +121,9 @@ word-spacing: 0.1em
   .wrapper{
     font-size: 1em
   }
-
+  p{
+    max-width: 400px
+  }
 
   /* .wrapper{
     font-size: 1.5em
@@ -156,10 +158,15 @@ word-spacing: 0.1em
   #img_one{
     display: none
   }
+  p{
+    max-width: 300px
+  }
   /* .wrapper{
     font-size: 1.5em
   } */
-
+  .wrapper{
+    font-size: 1em
+  }
 
 }
 @media only screen and (min-width: 425px) {
