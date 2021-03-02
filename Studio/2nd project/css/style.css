@@ -76,17 +76,43 @@ a:hover{
   color: gray
 }
 
-
-.book2{
-  transform: rotate(-90deg);
-  font-size: 0.5em;
-  position: relative;
+.mobile{
+  display: inline-block;
+  margin: 10px;
+font-size: 0.45em
 }
+
+/* .mobile{
+  border: 1px solid red;
+  font-size: 0.3em;
+
+}
+.book2{
+  border: 1px solid green;
+  max-width: 20px;
+    transform: rotate(-90deg);
+    position: absolute;
+    left: 100px;
+  margin-top: 20px
+}
+
+#one{
+  right: 200px;
+  left: 300px;
+
+} */
+
+.wrapper{
+  display: block
+}
+
+
 
 @media only screen and (min-width: 320px) {
   p{
     font-size: 5em
 }
+
   #shelf_index{
     display: none
   }
@@ -96,6 +122,9 @@ a:hover{
   }
   .book{
 display: none
+  }
+  .wrapper{
+    display: block
   }
 }
 @media only screen and (min-width: 375px) {
@@ -111,6 +140,9 @@ display: none
   }
   .book{
 display: none
+  }
+  .wrapper{
+    display: block
   }
 }
 
@@ -137,7 +169,7 @@ display: none
       top: 290px;
       transform: rotate(90deg);
       left: 300px}
-  }
+
   p{
     font-size: 5em
   }
@@ -152,6 +184,9 @@ display: none
   }
   .book{
 display: flex
+  }
+  .wrapper{
+    display: none
   }
 }
 @media only screen and (min-width: 600px) {
@@ -188,6 +223,9 @@ display: flex
     #shelf2{
       display: none
     }
+    /* .wrapper{
+      display: none
+    } */
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
 
@@ -218,12 +256,10 @@ display: flex
       p{
         font-size: 5.5em
       }
-      #shelf1{
+      /* .wrapper{
         display: none
-      }
-      #shelf2{
-        display: none
-      }
+      } */
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -253,12 +289,15 @@ display: flex
       p{
         font-size: 5.5em
       }
-      #shelf1{
+      .mobile{
         display: none
       }
       #shelf2{
         display: none
       }
+      /* .wrapper{
+        display: none
+      } */
 }
 @media only screen and (min-width: 1200px) {
   /* #one{
@@ -290,12 +329,10 @@ display: flex
       p{
         font-size: 5.5em
       }
-      #shelf1{
+      /* .wrapper{
         display: none
-      }
-      #shelf2{
-        display: none
-      }
+      } */
+
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -327,7 +364,7 @@ p{
   font-size: 5.5em
 }
 
-#shelf2{
+.wrapper{
   display: none
 }
 #shelf_index{
