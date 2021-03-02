@@ -1,13 +1,13 @@
 .content{
   max-width: 500px;
   text-align: center;
-border: 1px solid;
+/* border: 1px solid; */
 }
 body{
   margin: 0px
 }
 .container{
-  border: 1px solid;
+  /* border: 1px solid; */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -50,7 +50,7 @@ a:hover{
 font-weight: 400;
 font-style: normal;
 font-size: 1em;
-border: 1px solid;
+/* border: 1px solid; */
 }
 #text1{
   font-size: 0.9em
@@ -321,6 +321,9 @@ here
   #img_two{
     display: none
   }
+  #tex1-1{
+        max-width: 250px
+  }
 }
 @media only screen and (min-width: 375px) {
   .wrapper{
@@ -332,6 +335,13 @@ here
   #img_two{
     display: none
   }
+  #text1-1{
+        max-width: 250px;
+        padding-left: 60px
+  }
+  /* .wrapper2{
+    max-width: 300px
+  } */
 }
 @media only screen and (min-width: 425px) {
 .wrapper2{
@@ -340,6 +350,7 @@ here
 .wrapper{
   display: block
 }
+
   #text{
     display: none
   }

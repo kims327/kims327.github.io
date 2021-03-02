@@ -87,12 +87,7 @@ word-spacing: 0.1em
   #img_one{
     display: none
   }
-  .wrapper{
-    font-size: 1.5em
-  }
-.container{
-  font-size: 1.5em
-}
+
   }
 @media only screen and (min-width: 320px) {
   #ivy{
@@ -119,12 +114,21 @@ word-spacing: 0.1em
   #img_one{
     display: none
   }
+  #img_two{
+    display: none
+  }
+
   .wrapper{
+    font-size: 1em
+  }
+
+
+  /* .wrapper{
     font-size: 1.5em
   }
   .container{
     font-size: 1.5em
-  }
+  } */
 }
 
 @media only screen and (min-width: 375px) {
@@ -152,9 +156,11 @@ word-spacing: 0.1em
   #img_one{
     display: none
   }
-  .wrapper{
+  /* .wrapper{
     font-size: 1.5em
-  }
+  } */
+
+
 }
 @media only screen and (min-width: 425px) {
   #ivy{
