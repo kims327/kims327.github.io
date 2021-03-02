@@ -126,28 +126,7 @@ display: none
   .wrapper{
     display: block
   }
-  #mobile1{
-    transform: rotate(-20deg);
-  }
-  #mobile2{
-    transform: rotate(-20deg);
-  }
-  #mobile3{
-    transform: rotate(-30deg);
-  }
-  #mobile4{
-    transform: rotate(-20deg);
-  }
-  #mobile5{
-    transform: rotate(-15deg);
-  }
-  #mobile5{
-    transform: rotate(-34deg);
 
-  }
-  #mobile6{
-    transform: rotate(-40deg);
-  }
 }
 @media only screen and (min-width: 375px) {
   p{
@@ -166,28 +145,7 @@ display: none
   .wrapper{
     display: block
   }
-  #mobile1{
-    transform: rotate(-20deg);
-  }
-  #mobile2{
-    transform: rotate(-20deg);
-  }
-  #mobile3{
-    transform: rotate(-30deg);
-  }
-  #mobile4{
-    transform: rotate(-20deg);
-  }
-  #mobile5{
-    transform: rotate(-15deg);
-  }
-  #mobile5{
-    transform: rotate(-34deg);
 
-  }
-  #mobile6{
-    transform: rotate(-40deg);
-  }
 }
 
 @media only screen and (min-width: 425px) {
