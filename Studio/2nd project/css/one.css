@@ -333,33 +333,15 @@ here
 }
 @media only screen and (min-width: 375px) {
   .wrapper{
-    display: block
-  }
-  .content2{
     display: none
-  }
-  #text{
-    display: none
-  }
-  #text_two{
-    display: none
-  }
-  #text_three{
-    display: none
-  }
-  #text_four{
-    display: none
-  }
-  #text_five{
-    display: none
-  }
-  #text_six{
-    display: flex
   }
   #img_one{
     display: none
   }
-}
+  #img_two{
+    display: none
+  }
+  }
 @media only screen and (min-width: 425px) {
   #text{
     display: none
