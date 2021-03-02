@@ -1,17 +1,71 @@
+body{
+  margin: 0px;
+}
+a{
+  color: black;
+  font-family: kepler-std-display, serif;
+font-weight: 700;
+font-style: normal;
+text-decoration: none
+}
+a:hover{
+  color: gray
+}
+#center {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+
+}
+#center2 {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+
+}
+#center3 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+
+}
+#center4 {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+
+}
+p{
+  font-size: 1.5em;
+}
 .container{
   height: 100vh;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: auto;
-font-size: 18px;
+  margin-right:0;
+  margin-left: 0px;
   font-family: kepler-std-display, serif;
 font-weight: 400;
 font-style: normal;
 word-spacing: 0.1em;
+position: relative;
+max-width: 600px;
+
 }
-p{
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+/* p{
   font-family: kepler-std-display, serif;
 font-weight: 400;
 font-style: normal;
@@ -19,7 +73,7 @@ word-spacing: 0.1em;
   max-width: 500px;
   text-align: center;
 
-}
+} */
 /* .wrapper{
   height: 100vh;
   display: flex;
@@ -39,30 +93,545 @@ word-spacing: 0.1em;
 } */
 .wrapper{
   height: 100vh;
-  width: 100vw
+  width: 100vw;
+  border: 1px solid
 }
-#one{
-  position: relative;
+/* p{
+margin: 0px
+} */
+/* #one{
+  position: absolute;
 left: 700px;
 top:400px;
   z-index: 0
 }
 #two{
-  position: relative;
+  position: absolute;
 left: 700px;
 top:300px;
   z-index: 2
 }
 
 #three{
-  position: relative;
+  position: absolute;
 left: 700px;
 top:300px;
   z-index: 3
 }
 #four{
-  position: relative;
+  position: absolute;
 left: 700px;
 top:200px;
   z-index: 3
+} */
+
+/* @media only screen and (min-width: 1440px) {
+  #center {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #center {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #center {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #center {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+
+  }
+
+}
+
+@media only screen and (min-width: 600px) {
+  #center {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 47%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 68%;
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+
+@media only screen and (min-width: 425px) {
+  #center {
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 47%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 68%;
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  #center {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+}
+
+@media only screen and (min-width: 320px) {
+
+}  #center {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+
+@media only screen and (max-width: 320px) {
+  #center {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+} */
+
+@media only screen and (min-width: 375px) {
+
+}
+@media only screen and (min-width: 425px) {
+  #center {
+    position: absolute;
+    top: 27%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 47%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 57%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 63%;
+    width: 100%;
+    text-align: center;
+
+  }
+  .container{
+    border: 1px solid goldenrod;
+    max-width: 500px
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: flex
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  #center {
+    position: absolute;
+    top: 27%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 47%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 57%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 63%;
+    width: 100%;
+    text-align: center;
+
+  }
+  .container{
+    border: 1px solid goldenrod;
+    max-width: 500px
+  }
+  #img_one{
+    display: flex
+  }
+  #img_two{
+    display: none
+  }
+}
+
+
+@media only screen and (min-width: 800px) {
+
+  #center {
+    position: absolute;
+    top: 27%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 60%;
+    width: 100%;
+    text-align: center;
+
+  }
+  .container{
+    border: 1px solid yellow;
+    max-width: 600px
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #center {
+    position: absolute;
+    top: 27%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+
+  }
+  .container{
+    border: 1px solid pink;
+    max-width: 600px
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #center {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+
+  }
+  .container{
+    border: 1px solid blue;
+    max-width: 600px
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  #center {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center2 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center3 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    text-align: center;
+
+  }
+  #center4 {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+
+  }.container{
+    border: 1px solid green;
+    max-width: 600px
+  }
+  #img_one{
+    display: flex
+  }
+  #img_two{
+    display: none
+  }
 }

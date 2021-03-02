@@ -1,3 +1,7 @@
+body{
+  background-color: white;
+
+}
 .container{
   height: 100vh;
   display: flex;
@@ -5,19 +9,332 @@
   justify-content: center;
   text-align: center;
   margin: auto;
-  max-width: 500px;
+  max-width: 600px;
   font-family: kepler-std-display, serif;
 font-weight: 400;
 font-style: normal;
-word-spacing: 0.1em
+word-spacing: 0.1em;
+font-size: 1.5em
 }
-
+.container2{
+    height: 50vh;
+}
 
 h1{
-  font-size: 500px;
+  font-size: 20em;
+  line-height: 1em;
+  font-family: ivypresto-display, serif;
+font-weight: 700;
+font-style: normal;
 
 }
 
-#scroll{
-    max-width: 1000px;
+#width{
+  max-width: 800px
+}
+
+a{
+  color: black;
+  font-family: kepler-std-display, serif;
+font-weight: 700;
+font-style: normal;
+text-decoration: none
+}
+a:hover{
+  color: gray
+}
+
+/* @media only screen and (max-width: 320px) {
+  .container{
+  color: white;
+  font-size: 2em;
+  line-height: 1.4em
+  }
+
+}
+
+@media only screen and (min-width: 320px) {
+  body{
+    background-color: black;
+  }
+  h1{
+    font-size: 17em;
+    line-height: 1em;
+    font-family: ivypresto-display, serif;
+  font-weight: 700;
+  font-style: normal;
+ color: black
+  }
+  .container{
+    display: flex;
+    color: white;
+    font-size: 2em;
+    line-height: 1.4em
+  }
+  a{
+    color: white;
+    font-family: kepler-std-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none
+  }
+  a:hover{
+    color: gray
+  }
+} */
+@media only screen and (max-width: 320px) {
+  p{
+    display: none
+  }
+}
+@media only screen and (min-width: 320px) {
+  body{
+    background-color: red;
+  }
+  h1{
+    font-size: 17em;
+    line-height: 1em;
+    font-family: ivypresto-display, serif;
+  font-weight: 700;
+  font-style: normal;
+ color: white
+  }
+  p{
+    color:white
+  }
+  .container{
+    display: flex;
+    color: white;
+    font-size: 2em;
+    line-height: 1.4em
+  }
+  a{
+    color: white;
+    font-family: kepler-std-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none
+  }
+  a:hover{
+    color: gray
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  body{
+    background-color: blue;}
+    h1{
+      font-size: 11em;
+      line-height: 0.8em;
+      font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white
+    }
+    #img_one{
+      display: none
+    }
+    #img_two{
+      display: flex
+    }
+    #img_three{
+      display: none
+    }
+  .container{
+  display: flex;
+  font-size: 1.5em;
+  color: black;
+  border: 5px solid
+  }
+  a{
+  color: black;
+  font-family: kepler-std-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none
+  }
+}
+@media only screen and (max-width: 425px) {
+
+}
+@media only screen and (min-width: 425px) {
+  body{
+    background-color: black;}
+    h1{
+      font-size: 11em;
+      line-height: 0.8em;
+      font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white
+    }
+    #img_one{
+      display: none
+    }
+    #img_two{
+      display: flex
+    }
+    #img_three{
+      display: none
+    }
+.container{
+  display: flex;
+  font-size: 1.5em;
+  color: black;
+  /* border: 5px solid */
+}
+a{
+  color: white;
+  font-family: kepler-std-display, serif;
+font-weight: 700;
+font-style: normal;
+text-decoration: none
+}
+}
+@media only screen and (min-width: 600px) {
+  body{
+    background-color: black;}
+    h1{
+      font-size: 13em;
+      line-height: 0.8em;
+      font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white
+    }
+    .container{
+      border: 1px solid magenta
+    }
+    #img_one{
+      display: none
+    }
+    #img_two{
+      display: none
+    }
+    #img_three{
+      display: flex
+    }
+}
+
+@media only screen and (min-width: 800px) {
+  body{
+    background-color: black;}
+    h1{
+      font-size: 15em;
+      line-height: 0.8em;
+      font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white
+    }
+    .container{
+      border: 1px solid blue
+    }
+    #img_one{
+      display: none
+    }
+    #img_two{
+      display: none
+    }
+    #img_three{
+      display: flex
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+  body{
+    background-color: black;}
+    h1{
+      font-size: 17em;
+      line-height: 0.8em;
+      font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white
+    }
+    .container{
+      border: 1px solid green
+    }
+    #img_one{
+      display: none
+    }
+    #img_two{
+      display: none
+    }
+    #img_three{
+      display: flex
+    }
+    p{
+      display: none
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+  body{
+    background-color: black;}
+    h1{
+      font-size: 19em;
+      line-height: 0.8em;
+      font-family: ivypresto-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    color: white
+    }
+  .container{
+    border: 1px solid yellow;
+    display: flex;
+    font-size: 1.5em;
+    color: black
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: none
+  }
+  #img_three{
+    display: flex
+  }
+  a{
+    color: black;
+    font-family: kepler-std-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none
+  }
+
+}
+@media only screen and (min-width: 1400px) {
+  body{
+    background-color: white;
+  }
+  h1{
+  display: none
+  }
+.container{
+  border: 1px solid red;
+  display: flex;
+  font-size: 1.5em;
+  color: black
+}
+#img_one{
+  display: flex
+}
+#img_two{
+  display: none
+}
+#img_three{
+  display: none
+}
+a{
+    color: black;
+    font-family: kepler-std-display, serif;
+  font-weight: 700;
+  font-style: normal;
+  text-decoration: none
+  }
+  p{
+    display: block;
+    color:black
+  }
 }

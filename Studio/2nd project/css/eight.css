@@ -5,15 +5,310 @@
   justify-content: center;
   text-align: center;
   margin: auto;
-  max-width: 500px;
+  max-width: 600px;
   font-family: kepler-std-display, serif;
 font-weight: 400;
 font-style: normal;
-word-spacing: 0.1em
+word-spacing: 0.1em;
+font-size: 1.5em
 }
 
 #poem{
   font-family: ivypresto-display, serif;
 font-weight: 100;
 font-style: normal;
+line-height: 3em
+}
+
+a{
+  color: black;
+  font-family: kepler-std-display, serif;
+font-weight: 700;
+font-style: normal;
+text-decoration: none
+}
+a:hover{
+  color: gray
+}
+@media only screen and (max-width: 320px) {
+
+}
+@media only screen and (min-width: 320px) {
+
+}
+@media only screen and (min-width: 375px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: flex
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: none
+  }
+  .container{
+    font-size: 1em;
+    max-width: 350px;
+    line-height: 1.3em
+  }
+}
+@media only screen and (min-width: 425px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: flex
+  }
+  .container{
+    border: 1px solid blue
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: none
+  }
+
+
+}
+@media only screen and (min-width: 550px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: flex
+  }
+  .container{
+    font-size: 1.5em;
+    max-width: 600px;
+    line-height: 1.5em
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: flex
+  }
+}
+@media only screen and (min-width: 650px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: flex
+  }
+  #tree7{
+    display: none
+  }
+  .container{
+    border: 1px solid green
+  }
+  #img_one{
+    display: flex
+  }
+  #img_two{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 850px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: flex
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: flex
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: flex
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  #img_one{
+    display: flex
+  }
+  #img_two{
+    display: none
+  }
+}
+@media only screen and (min-width: 1300px) {
+  #tree{
+    display: none
+  }
+  #tree2{
+  display: flex
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  .container{
+    border: 1px solid pink
+  }
+  #img_one{
+    display: flex
+  }
+  #img_two{
+    display: none
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #tree{
+    display: flex
+  }
+  #tree2{
+  display: none
+  }
+  #tree3{
+    display: none
+  }
+  #tree4{
+    display: none
+  }
+  #tree5{
+    display: none
+  }
+  #tree6{
+    display: none
+  }
+  #tree7{
+    display: none
+  }
+  .container{
+    border: 1px solid pink
+  }
+  #img_one{
+    display: flex
+  }
+  #img_two{
+    display: none
+  }
 }

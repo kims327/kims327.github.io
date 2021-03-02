@@ -5,9 +5,195 @@
   justify-content: center;
   text-align: center;
   margin: auto;
-  max-width: 500px;
+  max-width: 700px;
   font-family: kepler-std-display, serif;
 font-weight: 400;
 font-style: normal;
-word-spacing: 0.1em
+word-spacing: 0.2em;
+font-size: 1.5em
+}
+
+a{
+  color: black;
+  font-family: kepler-std-display, serif;
+font-weight: 700;
+font-style: normal;
+text-decoration: none
+}
+a:hover{
+  color: gray
+}
+
+
+@media only screen and (max-width: 320px) {
+
+}
+@media only screen and (min-width: 320px) {
+
+}
+@media only screen and (min-width: 375px) {
+
+}
+@media only screen and (min-width: 425px) {
+  #text{
+    display: none
+  }
+  #text2{
+    display: none
+  }
+  #text3{
+    display: none
+  }
+  #text4{
+    display: none
+  }
+  #text5{
+    display: none
+  }
+  #text6{
+    display: flex
+  }
+  .container{
+    font-size: 1.2em;
+    max-width: 500px
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: flex
+  }
+}
+@media only screen and (min-width: 600px) {
+  #text{
+    display: none
+  }
+  #text2{
+    display: none
+  }
+  #text3{
+    display: none
+  }
+  #text4{
+    display: none
+  }
+  #text5{
+    display: flex
+  }
+  #text6{
+    display: none
+  }
+  .container{
+    font-size: 1.3em;
+    max-width: 600px
+  }
+  #img_one{
+    display: flex
+  }
+  #img_two{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  #text{
+    display: none
+  }
+  #text2{
+    display: none
+  }
+  #text3{
+    display: none
+  }
+  #text4{
+    display: flex
+  }
+  #text5{
+    display: none
+  }
+  #text6{
+    display: none
+  }
+  .container{
+    font-size: 1.5em;
+      max-width: 600px
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  #text{
+    display: none
+  }
+  #text2{
+    display: none
+  }
+  #text3{
+    display: flex
+  }
+  #text4{
+    display: none
+  }
+  #text5{
+    display: none
+  }
+  #text6{
+    display: none
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  #text{
+    display: none
+  }
+  #text2{
+    display: flex
+  }
+  #text3{
+    display: none
+  }
+  #text4{
+    display: none
+  }
+  #text5{
+    display: none
+  }
+  #text6{
+    display: none
+  }
+  #img_one{
+    display: flex
+  }
+  #img_two{
+    display: none
+  }
+}
+@media only screen and (min-width: 1400px) {
+#text{
+  display: flex
+}
+#text2{
+  display: none
+}
+#text3{
+  display: none
+}
+#text4{
+  display: none
+}
+#text5{
+  display: none
+}
+#text6{
+  display: none
+}
+.container{
+  font-size: 1.5em;
+    max-width: 700px
+}
+#img_one{
+  display: flex
+}
+#img_two{
+  display: none
+}
 }
