@@ -75,12 +75,42 @@ a:visited{
 a:hover{
   color: gray
 }
-@media only screen and (min-width: 320px) {
 
+
+.book2{
+  transform: rotate(-90deg);
+  font-size: 0.5em;
+  position: relative;
+}
+
+@media only screen and (min-width: 320px) {
+  p{
+    font-size: 5em
+}
+  #shelf_index{
+    display: none
+  }
+
+  #shelf2{
+    display: flex
+  }
+  .book{
+display: none
+  }
 }
 @media only screen and (min-width: 375px) {
   p{
     font-size: 5em
+  }
+
+  #shelf_index{
+    display: none
+  }
+  #shelf2{
+    display: flex
+  }
+  .book{
+display: none
   }
 }
 
@@ -111,6 +141,18 @@ a:hover{
   p{
     font-size: 5em
   }
+  #shelf1{
+    display: none
+  }
+  #shelf2{
+    display: none
+  }
+  #shelf_index{
+    display: flex
+  }
+  .book{
+display: flex
+  }
 }
 @media only screen and (min-width: 600px) {
 
@@ -139,6 +181,12 @@ a:hover{
     }
     p{
       font-size: 5.5em
+    }
+    #shelf1{
+      display: none
+    }
+    #shelf2{
+      display: none
     }
 }
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -170,6 +218,12 @@ a:hover{
       p{
         font-size: 5.5em
       }
+      #shelf1{
+        display: none
+      }
+      #shelf2{
+        display: none
+      }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -198,6 +252,12 @@ a:hover{
       left: 240px}
       p{
         font-size: 5.5em
+      }
+      #shelf1{
+        display: none
+      }
+      #shelf2{
+        display: none
       }
 }
 @media only screen and (min-width: 1200px) {
@@ -230,6 +290,12 @@ a:hover{
       p{
         font-size: 5.5em
       }
+      #shelf1{
+        display: none
+      }
+      #shelf2{
+        display: none
+      }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -259,5 +325,15 @@ top: 0;
 left: 0}
 p{
   font-size: 5.5em
+}
+
+#shelf2{
+  display: none
+}
+#shelf_index{
+  display: flex
+}
+.book{
+display: flex
 }
 }
