@@ -93,7 +93,7 @@ a:hover{
     display: flex
   }
   .container{
-    border: 1px solid blue
+  
   }
   #img_one{
     display: none
@@ -161,7 +161,7 @@ a:hover{
     display: none
   }
   .container{
-    border: 1px solid green
+
   }
   #img_one{
     display: flex
@@ -271,7 +271,7 @@ a:hover{
     display: none
   }
   .container{
-    border: 1px solid pink
+
   }
   #img_one{
     display: flex
@@ -303,7 +303,7 @@ a:hover{
     display: none
   }
   .container{
-    border: 1px solid pink
+
   }
   #img_one{
     display: flex

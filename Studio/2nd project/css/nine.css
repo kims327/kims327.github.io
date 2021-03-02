@@ -138,6 +138,9 @@ font-size: 1em
   .wrapper{
     display: none
   }
+  #sleep{
+font-size: 1em
+  }
 }
 @media only screen and (min-width: 425px) {
   #text{
@@ -173,7 +176,9 @@ font-size: 1em
   }
   .wrapper{
     display: block;
-    border: 1px solid
+  }
+  #sleep{
+font-size: 1.5em
   }
 }
 @media only screen and (min-width: 600px) {

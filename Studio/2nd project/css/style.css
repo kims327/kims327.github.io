@@ -75,12 +75,16 @@ a:visited{
 a:hover{
   color: gray
 }
+@media only screen and (min-width: 320px) {
 
+}
+@media only screen and (min-width: 375px) {
+  p{
+    font-size: 5em
+  }
+}
 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (max-width: 900px) {
-
+@media only screen and (min-width: 425px) {
   #one{
     position: relative;
     top: 390px;
@@ -104,6 +108,41 @@ a:hover{
       transform: rotate(90deg);
       left: 300px}
   }
+  p{
+    font-size: 5em
+  }
+}
+@media only screen and (min-width: 600px) {
+
+    #one{
+      position: relative;
+      top: 390px;
+      transform: rotate(90deg);
+      right: 700px}
+    #two{
+      transform: rotate(90deg);
+      right: 550px;
+      top:130px
+      }
+      #eight{
+        position: relative;
+        top: 210px;
+        transform: rotate(90deg);
+
+        left:100px
+      }
+      #nine{
+        position: relative;
+        top: 290px;
+        transform: rotate(90deg);
+        left: 300px}
+    }
+    p{
+      font-size: 5.5em
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 900px) {
@@ -128,6 +167,9 @@ a:hover{
       top: 240px;
       transform: rotate(-50deg);
       left: 500px}
+      p{
+        font-size: 5.5em
+      }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -154,6 +196,9 @@ a:hover{
       top: 30px;
       transform: rotate(-40deg);
       left: 240px}
+      p{
+        font-size: 5.5em
+      }
 }
 @media only screen and (min-width: 1200px) {
   /* #one{
@@ -182,6 +227,9 @@ a:hover{
       top: 0;
       transform: rotate(-30deg);
       left: 170px}
+      p{
+        font-size: 5.5em
+      }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -209,4 +257,7 @@ position: relative;
 top: 0;
 
 left: 0}
+p{
+  font-size: 5.5em
+}
 }

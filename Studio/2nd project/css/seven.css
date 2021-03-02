@@ -82,11 +82,7 @@ a:hover{
     color: gray
   }
 } */
-@media only screen and (max-width: 320px) {
-  p{
-    display: none
-  }
-}
+
 @media only screen and (min-width: 320px) {
   body{
     background-color: red;
@@ -122,9 +118,9 @@ a:hover{
 
 @media only screen and (min-width: 375px) {
   body{
-    background-color: blue;}
+    background-color: black;}
     h1{
-      font-size: 11em;
+      font-size: 7em;
       line-height: 0.8em;
       font-family: ivypresto-display, serif;
     font-weight: 700;
@@ -135,28 +131,26 @@ a:hover{
       display: none
     }
     #img_two{
-      display: flex
+      display: none
     }
     #img_three{
       display: none
     }
   .container{
   display: flex;
-  font-size: 1.5em;
+  font-size: 1em;
   color: black;
-  border: 5px solid
+  max-width: 400px;
   }
   a{
-  color: black;
+  color: white;
   font-family: kepler-std-display, serif;
   font-weight: 700;
   font-style: normal;
   text-decoration: none
   }
 }
-@media only screen and (max-width: 425px) {
 
-}
 @media only screen and (min-width: 425px) {
   body{
     background-color: black;}
@@ -166,7 +160,8 @@ a:hover{
       font-family: ivypresto-display, serif;
     font-weight: 700;
     font-style: normal;
-    color: white
+    color: white;
+    max-width: 600px;
     }
     #img_one{
       display: none
@@ -203,7 +198,7 @@ text-decoration: none
     color: white
     }
     .container{
-      border: 1px solid magenta
+      max-width: 600px;
     }
     #img_one{
       display: none
@@ -213,6 +208,13 @@ text-decoration: none
     }
     #img_three{
       display: flex
+    }
+    a{
+      color: white;
+      font-family: kepler-std-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none
     }
 }
 
@@ -228,7 +230,10 @@ text-decoration: none
     color: white
     }
     .container{
-      border: 1px solid blue
+      display: flex;
+      font-size: 1.5em;
+      color: white;
+      max-width: 600px;
     }
     #img_one{
       display: none
@@ -238,6 +243,13 @@ text-decoration: none
     }
     #img_three{
       display: flex
+    }
+    a{
+      color: white;
+      font-family: kepler-std-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none
     }
 }
 
@@ -245,7 +257,7 @@ text-decoration: none
   body{
     background-color: black;}
     h1{
-      font-size: 17em;
+      font-size: 15em;
       line-height: 0.8em;
       font-family: ivypresto-display, serif;
     font-weight: 700;
@@ -253,7 +265,10 @@ text-decoration: none
     color: white
     }
     .container{
-      border: 1px solid green
+      display: flex;
+      font-size: 1.5em;
+      color: white;
+      max-width: 600px;
     }
     #img_one{
       display: none
@@ -264,28 +279,34 @@ text-decoration: none
     #img_three{
       display: flex
     }
-    p{
-      display: none
+    a{
+      color: white;
+      font-family: kepler-std-display, serif;
+    font-weight: 700;
+    font-style: normal;
+    text-decoration: none
     }
+
 }
 
 @media only screen and (min-width: 1200px) {
   body{
     background-color: black;}
     h1{
-      font-size: 19em;
+      font-size: 15em;
       line-height: 0.8em;
       font-family: ivypresto-display, serif;
     font-weight: 700;
     font-style: normal;
     color: white
     }
-  .container{
-    border: 1px solid yellow;
-    display: flex;
-    font-size: 1.5em;
-    color: black
-  }
+    .container{
+      display: flex;
+      font-size: 1.5em;
+      color: white;
+      max-width: 600px;
+    }
+
   #img_one{
     display: none
   }
@@ -296,7 +317,7 @@ text-decoration: none
     display: flex
   }
   a{
-    color: black;
+    color: white;
     font-family: kepler-std-display, serif;
   font-weight: 700;
   font-style: normal;
@@ -312,10 +333,10 @@ text-decoration: none
   display: none
   }
 .container{
-  border: 1px solid red;
   display: flex;
   font-size: 1.5em;
-  color: black
+  color: black;
+  max-width: 600px;
 }
 #img_one{
   display: flex

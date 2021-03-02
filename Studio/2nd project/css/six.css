@@ -29,9 +29,64 @@ a:hover{
 
 }
 @media only screen and (min-width: 320px) {
-
+  #text{
+    display: none
+  }
+  #text2{
+    display: none
+  }
+  #text3{
+    display: none
+  }
+  #text4{
+    display: none
+  }
+  #text5{
+    display: none
+  }
+  #text6{
+    display: flex
+  }
+  .container{
+    font-size: 1em;
+    max-width: 400px
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: none
+  }
 }
 @media only screen and (min-width: 375px) {
+  #text{
+    display: none
+  }
+  #text2{
+    display: none
+  }
+  #text3{
+    display: none
+  }
+  #text4{
+    display: none
+  }
+  #text5{
+    display: none
+  }
+  #text6{
+    display: flex
+  }
+  .container{
+    font-size: 1em;
+    max-width: 300px
+  }
+  #img_one{
+    display: none
+  }
+  #img_two{
+    display: none
+  }
 
 }
 @media only screen and (min-width: 425px) {
