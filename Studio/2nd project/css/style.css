@@ -126,7 +126,28 @@ display: none
   .wrapper{
     display: block
   }
+  #mobile1{
+    transform: rotate(0deg);
+  }
+  #mobile2{
+    transform: rotate(0deg);
+  }
+  #mobile3{
+    transform: rotate(0deg);
+  }
+  #mobile4{
+    transform: rotate(0deg);
+  }
+  #mobile5{
+    transform: rotate(0deg);
+  }
+  #mobile5{
+    transform: rotate(0deg);
 
+  }
+  #mobile6{
+    transform: rotate(0deg);
+  }
 }
 @media only screen and (min-width: 375px) {
   p{
