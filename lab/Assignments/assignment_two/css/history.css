@@ -21,7 +21,8 @@ p{
 
 .citation{
   display: flex;
-    justify-content: center
+    justify-content: center;
+  padding: 30px
 }
 
 #home{
@@ -36,7 +37,8 @@ font-weight: 700;
 font-style: normal;
 font-size: 10em;
 justify-content: center;
-padding-left: 30px
+padding-left: 30px;
+line-height: 1em
 }
 
 h2{

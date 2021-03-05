@@ -14,7 +14,9 @@ img{
    float: right ;
    padding: 20px
 }
-
+#left{
+  border: none
+}
 body{
   margin: 0px
 }
