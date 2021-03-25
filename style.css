@@ -1,0 +1,108 @@
+html{
+  height: 100%;
+  background: linear-gradient(#fff0f1, #ffa8ae)
+}
+body{
+  margin: 0px
+}
+/* h1{
+  font-family: swear-display-cilati,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 6em;
+
+color: #eb4034;
+
+} */
+/* h2{
+  font-family: optique-display,sans-serif;
+font-weight: 400;
+font-style: normal;
+font-size: 3em
+} */
+p{
+
+  position: relative;
+  font-family: swear-display-cilati,sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 4em;
+  color: #eb4034;
+}
+.container{
+  display: block;
+  margin: auto;
+  /* border: solid 5px; */
+}
+
+.projects{
+  display: block;
+  margin: auto;
+  /* border: solid 5px; */
+}
+.projects2{
+  display: block;
+  margin: auto;
+  /* border: solid 5px; */
+}
+.title{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+text-align: center;
+align-items: center;
+margin: 0px;
+margin-left: 30px
+}
+
+.title h1{
+  position: relative;
+  font-family: swear-display-cilati,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10em;
+  color: #eb4034;
+  margin-left: 40px
+}
+#button{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  border-radius: 40%;
+  font-size: 2em;
+  font-family: swear-display-cilati,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #eb4034;
+  background-color: #fff0f1;
+  border: solid 1px;
+  cursor: pointer
+}
+
+h2{
+  max-width: 25em;
+  position: relative;
+  font-family: swear-display-cilati,sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  color: #eb4034;
+}
+/*
+#button2{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  top: 10px;
+  border-radius: 40%;
+  font-size: 2em;
+  font-family: swear-display-cilati,sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: blue;
+  background-color: #fff0f1;
+  border: solid 1px;
+  cursor: pointer
+} */
