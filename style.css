@@ -38,11 +38,14 @@ p{
 .projects{
   display: block;
   margin: auto;
+  height: 1000px;
+  overflow: auto
   /* border: solid 5px; */
 }
 .projects2{
   display: block;
   margin: auto;
+
   /* border: solid 5px; */
 }
 .title{
@@ -82,13 +85,21 @@ margin-left: 30px
 }
 
 h2{
-  max-width: 25em;
+  max-width: 20em;
   position: relative;
   font-family: swear-display-cilati,sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2em;
   color: #eb4034;
+}
+a:hover{
+font-size: 1.1em;
+
+}
+
+a{
+text-decoration: none
 }
 /*
 #button2{

@@ -12,9 +12,11 @@
 // }
 
 document.querySelector('#button').onclick = function(){
-document.querySelector('body').style.backgroundColor="yellow";
-document.querySelector('h1').style.color="blue";
-document.querySelector('#button').style.color="blue";
+document.querySelector('body').style.backgroundColor="black";
+// document.querySelector('h1').style.color="#ffa8ae";
+document.querySelector('#button').style.backgroundColor="black";
+// document.querySelector('a').style.color="#ffa8ae";
+// document.querySelector('h2').style.color="#ffa8ae";
 }
 
 
