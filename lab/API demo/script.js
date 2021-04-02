@@ -3,6 +3,8 @@ console.log("airtable demo");
 //load airtable library
 
 var Airtable = require('airtable');
+console.log(Airtable);
+
 var base = new Airtable({apiKey: 'key9H7DTqrYaav7cD'}).base('appqaRl162WxLJLsA');
 //
 // base('Music').select({
@@ -133,12 +135,12 @@ function showSongs() {
     songTitle.innerText = song.fields.album_title;
     document.body.append(songTitle);
 
-    var nameOfArtist = document.createElement("p");
+    var nameOfArtist = document.createElement("h2");
     nameOfArtist.innerText = song.fields.artist;
-    document.body.append(nameOfArtist);
+    document.body.appendChild(nameOfArtist);
 
     var coverImage = document.createElement("img");
     coverImage.src = song.fields.album_artwork[0].url;
-    document.querySelector(".container").append(coverImage);
+    document.body.append(coverImage);
   });
 }
