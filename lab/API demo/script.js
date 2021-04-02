@@ -133,7 +133,7 @@ function showSongs() {
 
     var songTitle = document.createElement("h1");
     songTitle.innerText = song.fields.album_title;
-    document.body.append(songTitle);
+    document.body.appendChild(songTitle);
 
     var nameOfArtist = document.createElement("h2");
     nameOfArtist.innerText = song.fields.artist;
@@ -141,6 +141,6 @@ function showSongs() {
 
     var coverImage = document.createElement("img");
     coverImage.src = song.fields.album_artwork[0].url;
-    document.body.append(coverImage);
+    document.body.appendChild(coverImage);
   });
 }
