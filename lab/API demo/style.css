@@ -1,0 +1,12 @@
+img{
+  align-items: center;
+  width: 300px
+}
+
+.container{
+  display: block
+}
+
+body{
+  text-align: center;
+}
