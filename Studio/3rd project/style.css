@@ -10,7 +10,23 @@ filter: brightness(0)
   margin: auto
 }
 
+#refresh{
+  background-color: black;
+}
 
+#refresh:hover{
+  background-color: red
+}
+a:hover{
+  color: white
+}
+a{
+  color: red;
+}
+
+a{
+  text-decoration: none
+}
 span{
   text-align: center;
   color: white;

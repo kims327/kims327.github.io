@@ -37,6 +37,7 @@ function consoleLogModerns() {
   });
 }
 
+
 function showModerns() {
   console.log("showModerns()");
   moderns.forEach((modern, i) => {
@@ -308,12 +309,62 @@ function showModerns() {
     furnitureImage.style.left = "68vw";
   }
 
+makeDraggable(furnitureImage);
 
 document.body.appendChild(furnitureImage);
   });
 }
 
-
+function makeDraggable(dragItem) {
+  const container = document.body;
+  let active = false;
+  let initialX;
+  let initialY;
+  let currentX;
+  let currentY;
+  let xOffset = 0;
+  let yOffset = 0;
+  container.addEventListener("touchstart", dragStart, false);
+  container.addEventListener("touchend", dragEnd, false);
+  container.addEventListener("touchmove", drag, false);
+  container.addEventListener("mousedown", dragStart, false);
+  container.addEventListener("mouseup", dragEnd, false);
+  container.addEventListener("mousemove", drag, false);
+  function dragStart(event) {
+    if (event.type === "touchstart") {
+      initialX = event.touches[0].clientX - xOffset;
+      initialY = event.touches[0].clientY - yOffset;
+    } else {
+      initialX = event.clientX - xOffset;
+      initialY = event.clientY - yOffset;
+    }
+    if (event.target === dragItem) {
+      active = true;
+      dragItem.style.zIndex = zIndex++;
+    }
+  }
+  function dragEnd(event) {
+    initialX = currentX;
+    initialY = currentY;
+    active = false;
+  }
+  function drag(event) {
+    if (active) {
+      event.preventDefault();
+      if (event.type === "touchmove") {
+        currentX = event.touches[0].clientX - initialX;
+        currentY = event.touches[0].clientY - initialY;
+      } else {
+        currentX = event.clientX - initialX;
+        currentY = event.clientY - initialY;
+      }
+      xOffset = currentX;
+      yOffset = currentY;
+      dragItem.style.transform = `translate(${currentX}px, ${currentY}px)`;
+    }
+  }
+}
+let zIndex = 0;
 // moderns.forEach((modern, i) => {
 // // existing code in which you assign class name and src of the img
 // var furnitureImage = document.createElement("img");
