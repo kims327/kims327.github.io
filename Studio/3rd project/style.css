@@ -1,7 +1,159 @@
-img{
-  width: 100px
+
+img:hover{
+filter: brightness(0)
 }
 
-p{
-  font-size: 2em
+.nav{
+  display: flex;
+  overflow: scroll;
+  width: 90vw;
+  margin: auto
+}
+
+
+span{
+  text-align: center;
+  color: white;
+  font-family: Optima;
+  font-size: 2em;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  background-color: red;
+  border-radius: 50%;
+  padding: 10px;
+  width: 15vw;
+  margin: 10px
+}
+
+span:hover{
+  background-color: black;
+  color: red
+}
+
+#circle{
+  width: 100px;
+  height: 100px;
+  background: black
+}
+
+.furniture-image{
+  position: absolute;
+  height: 200px
+}
+@media only screen and (min-width: 375px) {
+  .furniture-image{
+    position: absolute;
+    height: 120px
+  }
+  span{
+    text-align: center;
+    color: white;
+    font-family: Optima;
+    font-size: 1.3em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+    width: 15vw;
+    margin: 10px
+  }
+}
+@media only screen and (min-width: 425px) {
+  .furniture-image{
+    position: absolute;
+    height: 110px
+  }
+}
+@media only screen and (min-width: 600px) {
+  .furniture-image{
+    position: absolute;
+    height: 120px
+  }
+
+}
+
+@media only screen and (min-width: 800px) {
+  .furniture-image{
+    position: absolute;
+    height: 140px
+  }
+  span{
+    text-align: center;
+    color: white;
+    font-family: Optima;
+    font-size: 1.5em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+    width: 15vw;
+    margin: 10px
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .furniture-image{
+    position: absolute;
+    height: 165px
+  }
+  span{
+    text-align: center;
+    color: white;
+    font-family: Optima;
+    font-size: 1.7em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+    width: 15vw;
+    margin: 10px
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .furniture-image{
+    position: absolute;
+    height: 180px
+  }
+  span{
+    text-align: center;
+    color: white;
+    font-family: Optima;
+    font-size: 1.8em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+    width: 15vw;
+    margin: 10px
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .furniture-image{
+    position: absolute;
+    height: 200px
+  }
+  span{
+    text-align: center;
+    color: white;
+    font-family: Optima;
+    font-size: 2em;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+    width: 15vw;
+    margin: 10px
+  }
 }
