@@ -39,7 +39,7 @@ span:hover{
 
 .furniture-image{
   position: absolute;
-  height: 200px
+  height: 200px;
 }
 @media only screen and (min-width: 375px) {
   .furniture-image{
