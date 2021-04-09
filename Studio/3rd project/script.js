@@ -101,13 +101,13 @@ function showModerns() {
     furnitureImage.style.top = "40vh";
     furnitureImage.style.left = "20vw";
   }else if (i === 18) {
-    furnitureImage.style.top = "30vh";
+    furnitureImage.style.top = "26vh";
     furnitureImage.style.left = "3vw";
   }else if (i === 19) {
     furnitureImage.style.top = "40vh";
     furnitureImage.style.left = "15vw";
   }else if (i === 20) {
-    furnitureImage.style.top = "15vh";
+    furnitureImage.style.top = "10vh";
     furnitureImage.style.left = "5vw";
   }else if (i === 21) {
     furnitureImage.style.top = "75vh";
@@ -125,7 +125,7 @@ function showModerns() {
     furnitureImage.style.top = "30vh";
     furnitureImage.style.left = "48vw";
   }else if (i === 26) {
-    furnitureImage.style.top = "80vh";
+    furnitureImage.style.top = "74vh";
     furnitureImage.style.left = "90vw";
   }else if (i === 27) {
     furnitureImage.style.top = "42vh";
@@ -134,7 +134,7 @@ function showModerns() {
     furnitureImage.style.top = "37vh";
     furnitureImage.style.left = "30vw";
   }else if (i === 29) {
-    furnitureImage.style.top = "81vh";
+    furnitureImage.style.top = "78vh";
     furnitureImage.style.left = "30vw";
   }else if (i === 30) {
     furnitureImage.style.top = "27vh";
@@ -150,16 +150,16 @@ function showModerns() {
     furnitureImage.style.left = "56vw";
   }else if (i === 34) {
     furnitureImage.style.top = "70vh";
-    furnitureImage.style.left = "86vw";
+    furnitureImage.style.left = "80vw";
   }else if (i === 35) {
     furnitureImage.style.top = "59vh";
     furnitureImage.style.left = "59vw";
   }else if (i === 36) {
-    furnitureImage.style.top = "80vh";
+    furnitureImage.style.top = "75vh";
     furnitureImage.style.left = "65vw";
   }else if (i === 37) {
     furnitureImage.style.top = "78vh";
-    furnitureImage.style.left = "79vw";
+    furnitureImage.style.left = "74vw";
   }else if (i === 38) {
     furnitureImage.style.top = "27vh";
     furnitureImage.style.left = "30vw";
@@ -179,7 +179,7 @@ function showModerns() {
     furnitureImage.style.top = "46vh";
     furnitureImage.style.left = "7vw";
   }else if (i === 44) {
-    furnitureImage.style.top = "16vh";
+    furnitureImage.style.top = "10vh";
     furnitureImage.style.left = "39vw";
   }else if (i === 45) {
     furnitureImage.style.top = "49vh";
@@ -231,7 +231,7 @@ function showModerns() {
     furnitureImage.style.left = "4vw";
   }else if (i === 61) {
     furnitureImage.style.top = "22vh";
-    furnitureImage.style.left = "9vw";
+    furnitureImage.style.left = "13vw";
   }else if (i === 62) {
     furnitureImage.style.top = "78vh";
     furnitureImage.style.left = "3vw";
@@ -302,7 +302,7 @@ function showModerns() {
     furnitureImage.style.top = "57vh";
     furnitureImage.style.left = "68vw";
   }else if (i === 85) {
-    furnitureImage.style.top = "10vh";
+    furnitureImage.style.top = "8vh";
     furnitureImage.style.left = "18vw";
   }else if (i === 86) {
     furnitureImage.style.top = "25vh";
@@ -310,6 +310,114 @@ function showModerns() {
   }
 
 makeDraggable(furnitureImage);
+
+var furnitureMaterial = modern.fields.material;
+furnitureMaterial.forEach(function(material){
+  furnitureImage.classList.add(material)
+})
+
+//add event listener to our filter
+
+var filterAluminium = document.querySelector('.aluminium');
+filterAluminium.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Aluminium")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)"
+  }
+})
+
+var filterCotton = document.querySelector('.cotton');
+filterCotton.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Cotton")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)"
+  }
+})
+
+var filterFabric = document.querySelector('.fabric');
+filterFabric.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Fabric")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)"
+  }
+})
+
+var filterGlass = document.querySelector('.glass');
+filterGlass.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Glass")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)"
+  }
+})
+
+var filterLeather = document.querySelector('.leather');
+filterLeather.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Leather")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)"
+  }
+})
+
+var filterMetal = document.querySelector('.metal');
+filterMetal.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Metal")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)"
+  }
+})
+
+var filterPlastic = document.querySelector('.plastic');
+filterPlastic.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Plastic")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)"
+  }
+})
+
+var filterSteel = document.querySelector('.steel');
+filterSteel.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Steel")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)";
+    furnitureImage.hover.style.filter = "saturate(500%)";
+  }
+})
+
+var filterStone = document.querySelector('.stone');
+filterStone.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Stone")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)"
+  }
+})
+
+var filterWood = document.querySelector('.wood');
+filterWood.addEventListener("click", function(){
+
+  if (furnitureImage.classList.contains("Wood")){
+    furnitureImage.style.filter = "brightness(0%)"
+  } else {
+    furnitureImage.style.filter = "brightness(100%)"
+  }
+})
 
 document.body.appendChild(furnitureImage);
   });
@@ -365,60 +473,17 @@ function makeDraggable(dragItem) {
   }
 }
 let zIndex = 0;
-// moderns.forEach((modern, i) => {
-// // existing code in which you assign class name and src of the img
-// var furnitureImage = document.createElement("img");
-// furnitureImage.classList.add("furniture-image");
-// furnitureImage.src = modern.fields.images[0].url;
-// // set position of each image based on index value
-// if (i === 0) {
-// furnitureImage.style.top = 10px;
-// furnitureImage.style.left = 0;
-// } else if (i === 1) {
-// furnitureImage.style.top = 10px;
-// furnitureImage.style.left = 40px;
-// } else if (i === 2) {
-// // insanity
-// }
-// document.body.appendChild(furnitureImage);
+
+
+
+
+// document.getElementById("aluminium").addEventListener("click", function() {
+//   alert("Aluminium!");
 // });
-
-
-
-
-document.getElementById("aluminium").addEventListener("click", function() {
-  alert("Aluminium!");
-});
-
-document.getElementById("cotton").addEventListener("click", function() {
-  alert("cotton!");
-});
-document.getElementById("fabric").addEventListener("click", function() {
-  alert("There are many types of fabric, including Polyester, Silk, Suede, Velvet, and etc,. Depending on the type of fabric, it takes from minumum 2 weeks to maximum 200 years to decompose. ");
-});
-
-
-
-
-//DRAGGABLE
-// var draggable;
 //
-// function move(id){
-//   var element = document.getElementById("circle");
-//   element.style.position = "absolute"
-//   element.onmousedown = function(){
-//     draggable = element;
-//   }
-// }
-//
-// document.onmouseup = function(e){
-//   draggable = null;
-// }
-// document.onmousemove = function(e){
-//   var x = e.pageX;
-//   var y = e.pageY;
-//
-//   draggable.style.left = x + "px"
-//   draggable.style.top = y + "px"
-// }
-//ENDS HERE
+// document.getElementById("cotton").addEventListener("click", function() {
+//   alert("cotton!");
+// });
+// document.getElementById("fabric").addEventListener("click", function() {
+//   alert("There are many types of fabric, including Polyester, Silk, Suede, Velvet, and etc,. Depending on the type of fabric, it takes from minumum 2 weeks to maximum 200 years to decompose. ");
+// });
