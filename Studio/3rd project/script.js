@@ -44,16 +44,44 @@ function showModerns() {
   console.log("showModerns()");
   moderns.forEach((modern, i) => {
 
+    // var container = document.createElement("div");
+
     var furnitureImage = document.createElement("img");
     furnitureImage.classList.add("furniture-image");
     furnitureImage.src = modern.fields.images[0].url;
 
+
+
+//hover
+// furnitureImage.addEventListener("mouseover", function(){
+//   furnitureImage.style.filter = "drop-shadow(30px 10px 4px #4444dd);"
+// })
+
+
+//code from Janine
+    // // add each fruit as a grid-item to the grid-container
+    // var fruitContainer = document.createElement("div");
+    // fruitContainer.classList.add("grid-item");
+    // document.querySelector(".grid-container").append(fruitContainer);
+    //
+    // // add fruit name to grid-container
+    // var fruitName = document.createElement("h1");
+    // fruitName.classList.add("fruit-name");
+    // fruitName.innerText = fruit.fields.fruit_name;
+    // fruitContainer.append(fruitName);
+    //
+    // // add fruit image to grid-container
+    // var fruitImage = document.createElement("img");
+    // fruitName.classList.add("fruit-image");
+    // fruitImage.src = fruit.fields.fruit_image[0].url;
+    // fruitContainer.append(fruitImage);
+
     //I want these information to show up once you click on the images
-    var furnitureName = document.createElement("div");
-    furnitureName.classList.add("furniture-name");
-    furnitureName.innerText = modern.fields.name;
-    document.body.appendChild(furnitureName);
-    furnitureName.style.display = "none"
+    // var furnitureName = document.createElement("div");
+    // furnitureName.classList.add("furniture-name");
+    // furnitureName.innerText = modern.fields.name;
+    // document.body.appendChild(furnitureName);
+    // furnitureName.style.display = "none"
 
 
 
@@ -328,6 +356,7 @@ backgroundLayer(furnitureImage);
 var furnitureMaterial = modern.fields.material;
 furnitureMaterial.forEach(function(material){
   furnitureImage.classList.add(material)
+
 })
 
 //add event listener to filter
@@ -409,7 +438,7 @@ filterSteel.addEventListener("click", function(){
     furnitureImage.style.filter = "brightness(0%)"
   } else {
     furnitureImage.style.filter = "brightness(100%)";
-    furnitureImage.hover.style.filter = "saturate(500%)";
+
   }
 })
 
@@ -417,7 +446,8 @@ var filterStone = document.querySelector('.stone');
 filterStone.addEventListener("click", function(){
 
   if (furnitureImage.classList.contains("Stone")){
-    furnitureImage.style.filter = "brightness(0%)"
+    furnitureImage.style.filter = "brightness(0%)";
+    // furnitureImage.style.filter = "drop-shadow(10px 15px 10px red)"
   } else {
     furnitureImage.style.filter = "brightness(100%)"
   }
@@ -433,7 +463,8 @@ filterWood.addEventListener("click", function(){
   }
 })
 
-document.body.appendChild(furnitureImage);
+document.querySelector(".wrapper").appendChild(furnitureImage);
+
 
   });
 }
@@ -521,17 +552,14 @@ event.target.style.transform = "translate(calc(50vw - 50%), calc(50vh - 180%))";
 
 
 
+
     document.body.append(layer);
 
   })
 }
-// window.onload = function() {
-// var click = document.querySelector('aluminium')
-//
-// click.onclick = function(){
-//   alert('click')
-// }
-// }
+
+
+
 
 document.getElementsByClassName('aluminium')[0].onclick = function(){
   alert("Aluminum is one of the most widely recycled materials. The aluminum can be recycled and reused in the creation of another product. This cycle allows the aluminum and steel to remain a permanently accessible material through recycling.");

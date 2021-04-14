@@ -72,6 +72,11 @@ span:hover{
   position: absolute;
   height: 200px;
 }
+.furniture_image:hover{
+  filter: drop-shadow(10px 15px 10px red)
+
+}
+
 @media only screen and (min-width: 375px) {
   .furniture-image{
     position: absolute;
