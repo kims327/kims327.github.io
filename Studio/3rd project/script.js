@@ -2,7 +2,9 @@ console.log("airtable demo");
 
 var Airtable = require('airtable');
 console.log(Airtable);
-var base = new Airtable({apiKey: 'key9H7DTqrYaav7cD'}).base('appqaRl162WxLJLsA');
+var base = new Airtable({
+	apiKey: 'key9H7DTqrYaav7cD'
+}).base('appqaRl162WxLJLsA');
 
 
 base("modern_furniture").select({}).eachPage(gotPageOfModerns, gotAllModerns);
@@ -165,7 +167,7 @@ function showModerns() {
     furnitureImage.style.left = "48vw";
   }else if (i === 26) {
     furnitureImage.style.top = "74vh";
-    furnitureImage.style.left = "90vw";
+    furnitureImage.style.left = "86vw";
   }else if (i === 27) {
     furnitureImage.style.top = "42vh";
     furnitureImage.style.left = "30vw";
@@ -182,7 +184,7 @@ function showModerns() {
     furnitureImage.style.top = "47vh";
     furnitureImage.style.left = "20vw";
   }else if (i === 32) {
-    furnitureImage.style.top = "80vh";
+    furnitureImage.style.top = "75vh";
     furnitureImage.style.left = "50vw";
   }else if (i === 33) {
     furnitureImage.style.top = "43vh";
@@ -233,7 +235,7 @@ function showModerns() {
     furnitureImage.style.top = "73vh";
     furnitureImage.style.left = "2vw";
   }else if (i === 49) {
-    furnitureImage.style.top = "79vh";
+    furnitureImage.style.top = "77vh";
     furnitureImage.style.left = "5vw";
   }else if (i === 50) {
     furnitureImage.style.top = "60vh";
@@ -246,7 +248,7 @@ function showModerns() {
     furnitureImage.style.left = "64vw";
   }else if (i === 53) {
     furnitureImage.style.top = "50vh";
-    furnitureImage.style.left = "80vw";
+    furnitureImage.style.left = "75vw";
   }else if (i === 54) {
     furnitureImage.style.top = "23vh";
     furnitureImage.style.left = "39vw";
@@ -261,7 +263,7 @@ function showModerns() {
     furnitureImage.style.left = "83vw";
   }else if (i === 58) {
     furnitureImage.style.top = "63vh";
-    furnitureImage.style.left = "54vw";
+    furnitureImage.style.left = "50vw";
   }else if (i === 59) {
     furnitureImage.style.top = "32vh";
     furnitureImage.style.left = "4vw";
@@ -309,7 +311,7 @@ function showModerns() {
     furnitureImage.style.left = "27vw";
   }else if (i === 74) {
     furnitureImage.style.top = "73vh";
-    furnitureImage.style.left = "67vw";
+    furnitureImage.style.left = "63vw";
   }else if (i === 75) {
     furnitureImage.style.top = "19vh";
     furnitureImage.style.left = "37vw";
@@ -351,7 +353,16 @@ function showModerns() {
 
 makeDraggable(furnitureImage);
 
-backgroundLayer(furnitureImage);
+
+
+  furnitureImage.addEventListener("dblclick", () => {
+    backgroundLayer({
+      image: modern.fields.images[0].url,
+      name: modern.fields.name,
+      designer: modern.fields.company,
+      info: modern.fields.all_materials
+    });
+  });
 
 var furnitureMaterial = modern.fields.material;
 furnitureMaterial.forEach(function(material){
@@ -524,35 +535,82 @@ let zIndex = 0;
 //clickable
 let expanded = false;
 
-function backgroundLayer(filteredImage){
-  filteredImage.addEventListener("dblclick", (event) => {
-    expanded = true;
-    var layer = document.createElement("div");
-    var left = event.target.style.left;
-    var filter = event.target.style.filter;
-    var top = event.target.style.top;
+// function backgroundLayer(filteredImage){
+//   filteredImage.addEventListener("dblclick", (event) => {
+//     expanded = true;
+//     var layer = document.createElement("div");
+//     var left = event.target.style.left;
+//     var filter = event.target.style.filter;
+//     var top = event.target.style.top;
+//
+//     layer.addEventListener("click", (event) => {
+//       expanded = false;
+//       event.target.remove();
+//       filteredImage.style.left = left;
+//       filteredImage.style.top = top;
+//       filteredImage.style.transform = "";
+//       filteredImage.style.filter = filter;
+//     })
+//     layer.classList.add("layer");
+//     layer.style.zIndex = zIndex++;
+//
+// event.target.style.left = "";
+// event.target.style.top = "";
+// event.target.style.transform = "translate(calc(50vw - 50%), calc(50vh - 180%))";
+//     event.target.style.filter = "";
+//     event.target.style.zIndex = zIndex++;
+//
+//     document.body.append(layer);
+//
+//   })
+// }
 
-    layer.addEventListener("click", (event) => {
-      expanded = false;
-      event.target.remove();
-      filteredImage.style.left = left;
-      filteredImage.style.top = top;
-      filteredImage.style.transform = "";
-      filteredImage.style.filter = filter;
-    })
-    layer.classList.add("layer");
-    layer.style.zIndex = zIndex++;
+function backgroundLayer({ image, name, designer, info }) {
+  expanded = true;
 
-event.target.style.left = "";
-event.target.style.top = "";
-event.target.style.transform = "translate(calc(50vw - 50%), calc(50vh - 180%))";
-    event.target.style.filter = "";
-    event.target.style.zIndex = zIndex++;
+  // create elements
+  var paragraph = document.createElement("p");
+  paragraph.append(info);
 
-    document.body.append(layer);
+  var subheading = document.createElement("h2");
+  subheading.append(designer);
 
-  })
-}
+  var heading = document.createElement("h1");
+   heading.append(name);
+
+   var textContainer = document.createElement("div");
+   textContainer.classList.add("information-text");
+   textContainer.append(heading, subheading, paragraph);
+
+   var img = document.createElement("img");
+   img.src = image;
+   img.alt = "";
+
+   var imageContainer = document.createElement("div");
+   imageContainer.classList.add("information-image");
+   imageContainer.append(img);
+
+   var information = document.createElement("article");
+   information.classList.add("information");
+
+   var layer = document.createElement("div");
+   layer.classList.add("layer");
+
+   layer.style.zIndex = zIndex++;
+
+   layer.addEventListener("click", (event) => {
+     if (event.target === textContainer || event.target.parentNode === textContainer) {
+       return;
+     }
+
+     expanded = false;
+     layer.remove();
+   });
+
+   information.append(imageContainer, textContainer);
+   layer.appendChild(information);
+   document.body.appendChild(layer);
+ }
 
 
 
