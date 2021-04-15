@@ -26,9 +26,14 @@ filter: saturate(500%);
   margin-top: 10px
 }
 
+.information h2{
+  font-size: 1em;
+}
+
 .information p{
   font-size: 1.5em;
   margin-top: 50px;
+
 }
 
 .information-image {
@@ -141,6 +146,26 @@ span:hover{
   .information-image {
     max-height:20vh
   }
+  .information h1{
+    font-size: 1em;
+    margin-bottom: 0px;
+    margin-top: 10px
+  }
+  .information h2{
+    font-size: 0.7em;
+  }
+
+  .information p{
+    font-size: 0.7em;
+    margin-top: 30px;
+
+  }
+  .information-image img {
+    display: block;
+    height: 60%;
+    width: auto;
+    margin: auto;
+  }
 }
 @media only screen and (min-width: 425px) {
   .furniture-image{
@@ -164,8 +189,26 @@ span:hover{
     width: 15vw;
     margin: 10px;
   }
+  .information-image img {
+    display: block;
+    height: 100%;
+    width: auto;
+    margin: auto;
+  }
   .information-image {
-    max-height: 30%
+    max-height:25vh
+  }
+  .information h1{
+    font-size: 3em;
+    margin-bottom: 0px;
+    margin-top: 10px
+  }
+  .information h2{
+    font-size: 1em;
+  }
+  .information p{
+    font-size: 1.5em;
+    margin-top: 50px;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -173,7 +216,9 @@ span:hover{
     position: absolute;
     height: 120px
   }
-
+  .information-image {
+    max-height:30vh
+  }
 }
 
 @media only screen and (min-width: 800px) {
