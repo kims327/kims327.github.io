@@ -549,10 +549,6 @@ event.target.style.transform = "translate(calc(50vw - 50%), calc(50vh - 180%))";
     event.target.style.filter = "";
     event.target.style.zIndex = zIndex++;
 
-
-
-
-
     document.body.append(layer);
 
   })
