@@ -535,35 +535,7 @@ let zIndex = 0;
 //clickable
 let expanded = false;
 
-// function backgroundLayer(filteredImage){
-//   filteredImage.addEventListener("dblclick", (event) => {
-//     expanded = true;
-//     var layer = document.createElement("div");
-//     var left = event.target.style.left;
-//     var filter = event.target.style.filter;
-//     var top = event.target.style.top;
-//
-//     layer.addEventListener("click", (event) => {
-//       expanded = false;
-//       event.target.remove();
-//       filteredImage.style.left = left;
-//       filteredImage.style.top = top;
-//       filteredImage.style.transform = "";
-//       filteredImage.style.filter = filter;
-//     })
-//     layer.classList.add("layer");
-//     layer.style.zIndex = zIndex++;
-//
-// event.target.style.left = "";
-// event.target.style.top = "";
-// event.target.style.transform = "translate(calc(50vw - 50%), calc(50vh - 180%))";
-//     event.target.style.filter = "";
-//     event.target.style.zIndex = zIndex++;
-//
-//     document.body.append(layer);
-//
-//   })
-// }
+
 
 function backgroundLayer({ image, name, designer, info }) {
   expanded = true;
@@ -616,43 +588,32 @@ function backgroundLayer({ image, name, designer, info }) {
 
 
 document.getElementsByClassName('aluminium')[0].onclick = function(){
-  alert("Aluminum is one of the most widely recycled materials. The aluminum can be recycled and reused in the creation of another product. This cycle allows the aluminum and steel to remain a permanently accessible material through recycling.");
+  alert("Aluminum is one of the most widely recycled materials. The aluminum can be recycled and reused in the creation of another product. This cycle allows the aluminum and steel to remain a permanently accessible material through recycling. \n \n Double click on the filtered images to reveal more material information!");
 }
 document.getElementsByClassName('cotton')[0].onclick = function(){
-  alert("Cotton can be recycled. However, when we choose to recycle cotton, it will put the material through a less than perfect process. Unlike paper, which can be recycled into equal to or less than quality products, cotton will always lose its quality when recycled.");
+  alert("Cotton can be recycled. However, when we choose to recycle cotton, it will put the material through a less than perfect process. Unlike paper, which can be recycled into equal to or less than quality products, cotton will always lose its quality when recycled.\n \n Double click on the filtered images to reveal more material information!");
 }
 document.getElementsByClassName('fabric')[0].onclick = function(){
-  alert("There are many types of fabrics, including Polyester, Silk, Suede, Velvet, and etc,. Depending on the type of fabric, it takes from minumum 2 weeks to maximum 200 years to decompose.");
+  alert("There are many types of fabrics, including Polyester, Silk, Suede, Velvet, and etc,. Depending on the type of fabric, it takes from minumum 2 weeks to maximum 200 years to decompose.\n \n Double click on the filtered images to reveal more material information!");
 }
 document.getElementsByClassName('glass')[0].onclick = function(){
-  alert("Glass is a sustainable, fully recyclable material which provides great environmental benefits such as contributing to mitigating climate change and saving precious natural resources.");
+  alert("Glass is a sustainable, fully recyclable material which provides great environmental benefits such as contributing to mitigating climate change and saving precious natural resources.\n \n Double click on the filtered images to reveal more material information!");
 }
 document.getElementsByClassName('metal')[0].onclick = function(){
-  alert("Metals originate from the naturally occurring solid material, ore. And luckily, almost all metals can be recycled. ");
+  alert("Metals originate from the naturally occurring solid material, ore. And luckily, almost all metals can be recycled.\n \n Double click on the filtered images to reveal more material information! ");
 }
 document.getElementsByClassName('leather')[0].onclick = function(){
-  alert("Conventional leather is heavily criticized for the environmental impact of the tanning process.  But leather can also be eco-friendly. However, leather could never be an animal-friendly product.");
+  alert("Conventional leather is heavily criticized for the environmental impact of the tanning process.  But leather can also be eco-friendly. However, leather could never be an animal-friendly product.\n \n Double click on the filtered images to reveal more material information!");
 }
 document.getElementsByClassName('plastic')[0].onclick = function(){
-  alert("All plastics are made from polymers, which are long chains of carbon or hydrogen atoms which originate from petroleum or natural gases. These are not renewable energy sources, which means plastic is not a sustainable material. It can take hundreds or even thousands of years for plastic to break down so the environmental damage is long-lasting.");
+  alert("All plastics are made from polymers, which are long chains of carbon or hydrogen atoms which originate from petroleum or natural gases. These are not renewable energy sources, which means plastic is not a sustainable material. It can take hundreds or even thousands of years for plastic to break down so the environmental damage is long-lasting.\n \n Double click on the filtered images to reveal more material information!");
 }
 document.getElementsByClassName('steel')[0].onclick = function(){
-  alert("Steel is not only environmentally conscious but economically strategic in its inherent longevity and durability. Steel is the most recycled material in the world. Steel can be recycled and reused in the creation of another product. This cycle allows the aluminum and steel to remain a permanently accessible material through recycling.");
+  alert("Steel is not only environmentally conscious but economically strategic in its inherent longevity and durability. Steel is the most recycled material in the world. Steel can be recycled and reused in the creation of another product. This cycle allows the aluminum and steel to remain a permanently accessible material through recycling.\n \n Double click on the filtered images to reveal more material information!");
 }
 document.getElementsByClassName('stone')[0].onclick = function(){
-  alert("Stone is recyclable and has the potential to serve many different uses and purposes over its lifetime.  Environmentally, utilizing recycled stone can eliminate the energy, water, and other resources needed to generate new products from virgin or raw material sources, ultimately reducing or avoiding impacts to ecosystems and resource supplies.");
+  alert("Stone is recyclable and has the potential to serve many different uses and purposes over its lifetime.  Environmentally, utilizing recycled stone can eliminate the energy, water, and other resources needed to generate new products from virgin or raw material sources, ultimately reducing or avoiding impacts to ecosystems and resource supplies.\n \n Double click on the filtered images to reveal more material information!");
 }
 document.getElementsByClassName('wood')[0].onclick = function(){
-  alert("Wood such as clean timber, dimensional lumber, stumps and limbs are readily recyclable. Wood that has been treated (with creosote, for example), painted, stained or contaminated is not appropriate for recycling and should be properly disposed of. Reusing and recycling wood reduces the need to cut down trees.");
+  alert("Wood such as clean timber, dimensional lumber, stumps and limbs are readily recyclable. Wood that has been treated (with creosote, for example), painted, stained or contaminated is not appropriate for recycling and should be properly disposed of. Reusing and recycling wood reduces the need to cut down trees.\n \n Double click on the filtered images to reveal more material information!");
 }
-
-// document.getElementById("aluminium").addEventListener("click", function() {
-//   alert("Aluminium!");
-// });
-//
-// document.getElementById("cotton").addEventListener("click", function() {
-//   alert("cotton!");
-// });
-// document.getElementById("fabric").addEventListener("click", function() {
-//   alert("There are many types of fabric, including Polyester, Silk, Suede, Velvet, and etc,. Depending on the type of fabric, it takes from minumum 2 weeks to maximum 200 years to decompose. ");
-// });

@@ -32,8 +32,7 @@ filter: saturate(500%);
 }
 
 .information-image {
-  max-height: 30%
-
+  max-height: 30%;
 }
 
 .information-image img {
@@ -126,6 +125,32 @@ span:hover{
     text-align: center;
     color: white;
     font-family: Optima;
+    font-size: 0.8em;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 500;
+    background-color: red;
+    border-radius: 50%;
+    padding: 10px;
+    width: 15vw;
+    margin: 10px;
+  }
+  .information-image {
+    max-height:10%
+  }
+}
+@media only screen and (min-width: 425px) {
+  .furniture-image{
+    position: absolute;
+    height: 110px
+  }
+  span{
+    text-align: center;
+    color: white;
+    font-family: Optima;
     font-size: 1em;
     text-align: center;
     align-items: center;
@@ -139,11 +164,8 @@ span:hover{
     width: 15vw;
     margin: 10px;
   }
-}
-@media only screen and (min-width: 425px) {
-  .furniture-image{
-    position: absolute;
-    height: 110px
+  .information-image {
+    max-height: 30%
   }
 }
 @media only screen and (min-width: 600px) {
