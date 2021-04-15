@@ -8,26 +8,43 @@ body{
 /* img:hover{
 filter: saturate(500%);
 } */
-.information{
-  background-color: white;
-  width: 100vw;
-  height: 100vh;
-  display: block;
+.information {
+  display: flex;
   text-align: center;
+  height: 100%;
+  flex-flow: column;
+  justify-content: center;
 }
 
-.information h1{
-  margin: 0px
+.information-image {
+  max-height: 50%;
 }
 
-.layer{
+.information-image img {
+  display: block;
+  height: 100%;
+  width: auto;
+  margin: auto;
+}
+
+.information-image img:hover {
+  filter: none;
+}
+
+.information h1 {
+  margin: 0;
+}
+
+.layer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   position: absolute;
-  background-color: white;
-  opacity: 0.8;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .nav{
