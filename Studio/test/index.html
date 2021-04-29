@@ -1,13 +1,24 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-    <title></title>
+    <meta name="viewport" content="width=device-width">
+    <title>Mouse Events Demo</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="container">
-<p>hi</p>
-    </div>
+    <h1>Keyboard Demo</h1>
+    <p>Open console to see key presses</p>
+    <p>Press "Enter" key to change background color of page</p>
+    <p id="result">You didn't press any key yet.</p>
+    <p id="pronunciation">pronunciation</p>
+
+    <audio id="ㄴ" controls style="display:none">
+    <source src="ㄴ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+    </audio>
+
+
+    <script src="script.js"></script>
+
   </body>
 </html>

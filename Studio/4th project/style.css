@@ -1,0 +1,109 @@
+#result{
+  color: black;
+  display: flex;
+  font-size: 3em;
+  font-family: optique-display,sans-serif;
+font-weight: 700;
+font-style: normal;
+justify-content: center;
+overflow-x: scroll;
+padding: 0px
+}
+
+body{
+  font-family: optique-display,sans-serif;
+font-weight: 700;
+font-style: normal;
+text-align: center;
+margin: 0px
+}
+
+.wrapper{
+  font-size: 4em
+}
+
+.header{
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1em
+}
+
+.info1{
+  background-color: black;
+  height: 100vh;
+  color: white;
+  overflow: scroll;
+  font-size: 0.7em
+}
+.info1 h2{
+  margin-top: 1rem
+}
+.info2{
+  background-color: black;
+  height: 100vh;
+  color: white;
+  overflow: scroll;
+  font-size: 0.7em
+}
+
+.info2 h2{
+  margin-top: 1rem
+}
+
+
+.consonants{
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ grid-template-rows: 8% 20% 8% 20% 8% 20%;
+
+}
+
+.vowels{
+  display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+ grid-template-rows: 13% 30% 13% 30% 8% 20% ;
+
+}
+
+/* phone */
+@media only screen and (min-width: 375px) {
+  .wrapper {
+    font-size: 3em
+  }
+}
+/* labtop */
+@media only screen and (min-width: 425px) {
+  .wrapper {
+    font-size: 4em
+  }
+}
+@media only screen and (min-width: 600px) {
+  .wrapper{
+    font-size: 4em
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .wrapper{
+    font-size: 4em
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .wrapper{
+    font-size: 5em
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper{
+    font-size: 5em
+  }
+}
+@media only screen and (min-width: 1400px) {
+  .wrapper{
+    font-size: 5em
+  }
+}

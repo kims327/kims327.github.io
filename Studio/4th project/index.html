@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+     <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'npm1cgc',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
+    <title>document</title>
+  </head>
+  <body>
+    <div class="header">
+    <div class="header1">
+      Pronunciation Chart
+    </div>
+    <div class="header2">
+      How to combine letters
+    </div>
+      </div>
+
+      <div class="info1">
+        <h1>Consonants</h1>
+        <div class="consonants">
+        <p>ㄱ</p>
+        <p>ㄴ</p>
+        <p>ㄷ</p>
+        <p>ㄹ</p>
+        <p>ㅁ</p>
+        <p>ㅂ</p>
+        <p>ㅅ</p>
+
+        <p>g/k</p>
+        <p>n</p>
+        <p>d/t</p>
+        <p>r/l</p>
+        <p>m</p>
+        <p>b/p</p>
+        <p>s/t</p>
+
+        <p>ㅇ</p>
+        <p>ㅈ</p>
+        <p>ㅊ</p>
+        <p>ㅋ</p>
+        <p>ㅌ</p>
+        <p>ㅍ</p>
+        <p>ㅎ</p>
+
+        <p>silent/ng</p>
+        <p>j</p>
+        <p>ch</p>
+        <p>k</p>
+        <p>t</p>
+        <p>p</p>
+        <p>h</p>
+
+        <p>ㄲ</p>
+        <p>ㄸ</p>
+        <p>ㅃ</p>
+        <p>ㅆ</p>
+        <p>ㅉ</p>
+        <p></p>
+        <p></p>
+
+        <p>kk</p>
+        <p>tt</p>
+        <p>pp</p>
+        <p>ss</p>
+        <p>jj</p>
+        </div>
+
+        <h1>Vowels</h1>
+
+        <div class="vowels">
+        <p>ㅏ</p>
+        <p>ㅑ</p>
+        <p>ㅓ</p>
+        <p>ㅕ</p>
+        <p>ㅗ</p>
+        <p>ㅛ</p>
+        <p>ㅜ</p>
+
+        <p>a</p>
+        <p>ya</p>
+        <p>eo</p>
+        <p>yeo</p>
+        <p>o</p>
+        <p>yo</p>
+        <p>u</p>
+
+        <p>ㅠ</p>
+        <p>ㅡ</p>
+        <p>ㅣ</p>
+        <p>ㅐ</p>
+        <p>ㅔ</p>
+        <p>ㅒ</p>
+        <p>ㅖ</p>
+
+        <p>yu</p>
+        <p>eu</p>
+        <p>i</p>
+        <p>ae</p>
+        <p>e</p>
+        <p>yae</p>
+        <p>ye</p>
+
+        </div>
+      </div>
+      <div class="info2">
+<h1>Some Rules You Need to Know When Learning Korean</h1>
+      </div>
+
+
+<div class="wrapper">
+
+    <h1>훈민정음</h1>
+    <h2>type in any letter</h2>
+
+       <input type="text" id="input">
+       <div id="result"></div>
+
+       <audio id="ㄱ" controls style="display:none">
+  <source src="ㄱ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㄴ" controls style="display:none">
+<source src="ㄴ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㄷ" controls style="display:none">
+<source src="ㄷ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㄹ" controls style="display:none">
+<source src="ㄹ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅁ" controls style="display:none">
+<source src="ㅁ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅂ" controls style="display:none">
+<source src="ㅂ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅅ" controls style="display:none">
+<source src="ㅅ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅇ" controls style="display:none">
+<source src="ㅇ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅈ" controls style="display:none">
+<source src="ㅈ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅊ" controls style="display:none">
+<source src="ㅊ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅋ" controls style="display:none">
+<source src="ㅋ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅌ" controls style="display:none">
+<source src="ㅌ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅍ" controls style="display:none">
+<source src="ㅍ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅎ" controls style="display:none">
+<source src="ㅎ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅏ" controls style="display:none">
+<source src="ㅏ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅑ" controls style="display:none">
+<source src="ㅑ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅓ" controls style="display:none">
+<source src="ㅓ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅕ" controls style="display:none">
+<source src="ㅕ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅗ" controls style="display:none">
+<source src="ㅗ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅛ" controls style="display:none">
+<source src="ㅛ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅜ" controls style="display:none">
+<source src="ㅜ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅠ" controls style="display:none">
+<source src="ㅠ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<!-- <audio id="ㅡ" controls style="display:none">
+<source src="ㅡ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio> -->
+<audio id="ㅣ" controls style="display:none">
+<source src="ㅣ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅐ" controls style="display:none">
+<source src="ㅐ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㅔ" controls style="display:none">
+<source src="ㅔ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+</div>
+<!-- <h1>Toggle 'em</h1>
+<p>Hiya</p>
+<p>Such interesting text, eh?</p> -->
+<!-- <audio id="ㅣ" controls style="display:none">
+<source src="ㅣ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio> -->
+
+
+
+
+       <!-- <audio id="sound" controls>
+       <source src="Air purifier.m4a" type="audio/mpeg">
+       <source src="horse.ogg" type="audio/ogg">
+       Your browser does not support this audio format.
+     </audio> -->
+<script src="script.js"></script>
+  </body>
+</html>
