@@ -30,10 +30,10 @@ margin: 0px
   font-size: 2em
 }
 .header1:hover{
-  color: yellow
+  color: #ff8000
 }
 .header2:hover{
-  color: yellow
+  color: #ff8000
 }
 .info1{
   background-color: black;
@@ -88,7 +88,8 @@ html {
 	display: inline-block;
 	text-align: center;
 	margin: 1em;
-    margin: 20px
+    margin: 20px;
+
 }
 
 .big {
@@ -109,7 +110,7 @@ html {
 }
 
 figcaption{
-  color: magenta
+  color: #ff8000
 }
 
 #root{
@@ -138,19 +139,41 @@ body {
 grid-template-rows: 30% 10%  10% 30% 10% 10% ;
 }
 
+.rule2 h1{
+  font-size: 4em
+}
 .rule2 h2{
   max-width: 60vw;
   text-align: center;
 margin: auto;
 margin-bottom: 40px
 }
+.rule1 a:hover{
+  color: #ff8000
+}
+.rule1 a {
+  text-decoration: none;
+  color: white
+}
 
-/* *,
-*::before,
-*::after {
-	box-sizing: inherit;
-} */
+.rule2 a{
+  text-decoration: none;
+  color: white
+}
+.rule2 a:hover{
+  color: #ff8000
+}
 
+.number{
+  font-size: 2em
+}
+.space{
+  height: 30vh;
+background-color: black
+}
+.two{
+  padding-top: 100px
+}
 
 /* phone */
 @media only screen and (min-width: 375px) {
@@ -190,7 +213,7 @@ margin-bottom: 40px
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-  grid-template-rows: 30% 10%  30% 10% 30% 10% 30% 10%;
+  grid-template-rows: 30% 10%  10% 30% 10% 10%;
   }
 }
 
