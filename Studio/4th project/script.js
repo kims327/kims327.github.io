@@ -1,154 +1,302 @@
-console.log('hi')
-let inputElement = document.querySelector("#input");
+const HANGUL_MAP = [
+  {
+    match: "r",
+    character: "ㄱ",
+    pronunciation: "g/k"
+  },
+  {
+    match: "",
+    character: "ㄲ",
+    pronunciation: "kk"
+  },
+  {
+    match: "s",
+    character: "ㄴ",
+    pronunciation: "n"
+  },
 
-let result = document.querySelector("#result");
-
-inputElement.addEventListener("keydown",function(event){
-
-  // Detect when we specifically press enter key
-  if (event.key == "Enter"){
-
-
-
-    // Get the contents of the text input (aka name)
-    let name = inputElement.value;
-    console.log(name);
-
-    //We can also clear what we wrote in the text box
-    inputElement.value = "";
-
-    //Clear the reading result from last time
-    result.innerHTML = "";
-
-    // Loop through 4 times
-    for (let i = 0; i < 1000; i++){
-
-      // Print the number we're at in the loop
-      console.log(i);
-
-      // Get the i-th letter in the name
-      let letter = name[i];
-      console.log(letter);
-
-      // Create a new HTML image element for the card
-      let selectedCard = document.createElement("div");
-
-      // If letter is any of these, use the devil card
-      if (["r"].includes(letter)){
-        selectedCard.innerHTML = "ㄱ";
-      }
-      // if (["R"].includes(letter)){
-      //   selectedCard.innerHTML = "ㄲ";
-      // }
-      if (["s"].includes(letter)){
-        selectedCard.innerHTML = "ㄴ";
-      }
-
-      if (["e"].includes(letter)){
-        selectedCard.innerHTML = "ㄷ";
-      }
-      // if (["E"].includes(letter)){
-      //   selectedCard.innerHTML = "ㄸ";
-      // }
-      if (["f"].includes(letter)){
-        selectedCard.innerHTML = "ㄹ";
-      }
-      if (["a"].includes(letter)){
-        selectedCard.innerHTML = "ㅁ";
-      }
-      if (["q"].includes(letter)){
-        selectedCard.innerHTML = "ㅂ";
-      }
-      // if (["Q"].includes(letter)){
-      //   selectedCard.innerHTML = "ㅃ";
-      // }
-      if (["t"].includes(letter)){
-        selectedCard.innerHTML = "ㅅ";
-      }
-      // if (["T"].includes(letter)){
-      //   selectedCard.innerHTML = "ㅆ";
-      // }
-      if (["d"].includes(letter)){
-        selectedCard.innerHTML = "ㅇ";
-      }
-      if (["w"].includes(letter)){
-        selectedCard.innerHTML = "ㅈ";
-      }
-      // if (["W"].includes(letter)){
-      //   selectedCard.innerHTML = "ㅉ";
-      // }
-      if (["c"].includes(letter)){
-        selectedCard.innerHTML = "ㅊ";
-      }
-
-      if (["z"].includes(letter)){
-        selectedCard.innerHTML = "ㅋ";
-      }
-      if (["x"].includes(letter)){
-        selectedCard.innerHTML = "ㅌ";
-      }
-      if (["v"].includes(letter)){
-        selectedCard.innerHTML = "ㅍ";
-      }
-      if (["g"].includes(letter)){
-        selectedCard.innerHTML = "ㅎ";
-      }
-      if (["k"].includes(letter)){
-        selectedCard.innerHTML = "ㅏ";
-      }
-      if (["i"].includes(letter)){
-        selectedCard.innerHTML = "ㅑ";
-      }
-      if (["j"].includes(letter)){
-        selectedCard.innerHTML = "ㅓ";
-      }
-      if (["u"].includes(letter)){
-        selectedCard.innerHTML = "ㅕ";
-      }
-      if (["h"].includes(letter)){
-        selectedCard.innerHTML = "ㅗ";
-      }
-      if (["y"].includes(letter)){
-        selectedCard.innerHTML = "ㅛ";
-      }
-      if (["n"].includes(letter)){
-        selectedCard.innerHTML = "ㅜ";
-      }
-      if (["b"].includes(letter)){
-        selectedCard.innerHTML = "ㅠ";
-      }
-      if (["m"].includes(letter)){
-        selectedCard.innerHTML = "ㅡ";
-      }
-      if (["l"].includes(letter)){
-        selectedCard.innerHTML = "ㅣ";
-      }
-      if (["o"].includes(letter)){
-        selectedCard.innerHTML = "ㅐ";
-      }
-      if (["O"].includes(letter)){
-        selectedCard.innerHTML = "ㅒ";
-      }
-      if (["p"].includes(letter)){
-        selectedCard.innerHTML = "ㅔ";
-      }
-      if (["P"].includes(letter)){
-        selectedCard.innerHTML = "ㅖ";
-      }
+  {
+    match: "il",
+    character: "ㅒ",
+    pronunciation: "yae"
+  },
+  {
+    match: "e",
+    character: "ㄷ",
+    pronunciation: "d"
+  },
+  {
+    match: "f",
+    character: "ㄹ",
+    pronunciation: "r/l"
+  },
+  {
+    match: "a",
+    character: "ㅁ",
+    pronunciation: "m"
+  },
+	{
+		match: "t",
+		character: "ㅅ",
+		pronunciation: "s"
+	},
+  {
+    match: "d",
+    character: "ㅇ",
+    pronunciation: "ng"
+  },
+  {
+    match: "w",
+    character: "ㅈ",
+    pronunciation: "j"
+  },
+  {
+		match: "c",
+		character: "ㅊ",
+		pronunciation: "ch"
+	},
+  {
+    match: "z",
+    character: "ㅋ",
+    pronunciation: "k"
+  },
+  {
+    match: "x",
+    character: "ㅌ",
+    pronunciation: "t"
+  },
+  {
+    match: "v",
+    character: "ㅍ",
+    pronunciation: "p"
+  },
+  {
+    match: "g",
+    character: "ㅎ",
+    pronunciation: "h"
+  },
+  {
+    match: "k",
+    character: "ㅏ",
+    pronunciation: "a"
+  },
+  {
+    match: "i",
+    character: "ㅑ",
+    pronunciation: "ya"
+  },
+  {
+    match: "j",
+    character: "ㅓ",
+    pronunciation: "eo"
+  },
+  {
+    match: "u",
+    character: "ㅕ",
+    pronunciation: "yeo"
+  },
+  {
+		match: "h",
+		character: "ㅗ",
+		pronunciation: "o"
+	},
+  {
+		match: "y",
+		character: "ㅛ",
+		pronunciation: "yo"
+	},
+  {
+		match: "n",
+		character: "ㅜ",
+		pronunciation: "u"
+	},
+  {
+		match: "b",
+		character: "ㅠ",
+		pronunciation: "yu"
+	},
+  {
+		match: "m",
+		character: "ㅡ",
+		pronunciation: "eu"
+	},
+  {
+		match: "l",
+		character: "ㅣ",
+		pronunciation: "i"
+	},
+	{
+		match: "p",
+		character: "ㅔ",
+		pronunciation: "eh"
+	},
+  {
+    match: "pp",
+    character: "ㅖ",
+    pronunciation: "eh"
+  }
 
 
-      result.appendChild(selectedCard);
+];
 
+const cache = {
+  lastMatchedLetter: null,
+  typedLetters: [],
+  blocks: []
+};
+
+for (let i = 96; i <= 122; i++) {
+  window.addEventListener("keydown", handleAlphaKey(i));
+}
+window.addEventListener("keydown", handleSpacebar);
+window.addEventListener("keydown", handleDelete);
+window.addEventListener("keydown", handleBackspace);
+
+function handleAlphaKey(keyCode) {
+  return function(event) {
+    if (event.key === String.fromCharCode(keyCode)) {
+      cache.typedLetters.push(event.key);
+      if (!HANGUL_MAP.map(i => i.match).includes(cache.typedLetters.join(""))) {
+        clearArray(cache.typedLetters);
+        cache.lastMatchedLetter = null;
+        cache.typedLetters.push(event.key);
+      }
+      appendCharacterBlock();
+    }
+  };
+}
+
+function handleSpacebar(event) {
+  if (event.key === " ") {
+    clearArray(cache.typedLetters);
+    cache.lastMatchedLetter = null;
+    appendCharacterBlock();
+  }
+}
+
+function handleDelete(event) {
+  if (event.key === "Delete") {
+    clearArray(cache.typedLetters);
+    cache.lastMatchedLetter = null;
+    try {
+      cache.blocks.pop().remove();
+    } catch (e) {
+      return;
+    }
+  }
+}
+
+function handleBackspace(event) {
+  if (event.key === "Backspace") {
+    cache.typedLetters.pop();
+    try {
+      cache.blocks.pop().remove();
+    } catch (e) {
+      return;
     }
 
-  }
-})
+    if (cache.lastMatchedLetter?.slice(0, -2).length > 0) {
+      cache.lastMatchedLetter = cache.lastMatchedLetter.slice(0, -2);
+    } else {
+      cache.lastMatchedLetter = null;
+    }
 
-document.addEventListener('keydown', function(e) {
+    if (cache.typedLetters.length > 0) appendCharacterBlock();
+  }
+}
+
+function appendCharacterBlock(target = document.getElementById("root")) {
+  const char = findMatchingChar(cache.typedLetters.join(""), HANGUL_MAP);
+  console.log(char);
+  cache.lastMatchedLetter = char.match;
+  const block = createCharacterBlock(char.character, char.pronunciation);
+
+  if (typeof char.character !== "string" || !"tagName" in block) {
+    return;
+  }
+
+  if (
+    cache.blocks.length > 0 &&
+    cache.typedLetters.length > 1 &&
+    cache.typedLetters.join("") === cache.lastMatchedLetter
+  ) {
+    cache.blocks[cache.blocks.length - 1] = block;
+  } else {
+    cache.blocks.push(block);
+  }
+
+  clear(target);
+  target.append(...cache.blocks);
+  document.documentElement.scrollTop = document.documentElement.scrollHeight;
+}
+
+function findMatchingChar(input, dictionary) {
+  if (input.length === 0 || typeof input !== "string") {
+    // return a blank string if last input is blank (i.e. spacebar)
+    return {
+      match: null,
+      character: "",
+      pronunciation: ""
+    };
+  }
+
+  for (let i = 0; i < dictionary.length; i++) {
+    if (
+      input === dictionary[i].match &&
+      !cache.lastMatchedLetter?.includes(dictionary[i].match)
+    ) {
+      return {
+        match: dictionary[i].match,
+        character: dictionary[i].character,
+        pronunciation: dictionary[i].pronunciation
+      };
+    }
+  }
+
+  return {
+    match: null,
+    character: null,
+    pronunciation: null
+  };
+}
+
+function clearArray(array) {
+  while (array.length > 0) {
+    array.pop();
+  }
+}
+
+function clear(target = document.getElementById("root")) {
+  while (target.childNodes.length > 0) {
+    target.removeChild(target.firstChild);
+  }
+}
+
+function createCharacterBlock(character, pronunciation) {
+  if (typeof character !== "string") return;
+
+  const block = document.createElement("figure");
+  block.className = "block";
+  const c = document.createElement("span");
+  c.className = "big";
+  c.textContent = character;
+  const p = document.createElement("figcaption");
+  p.textContent = pronunciation;
+
+  block.append(c, p);
+  return block;
+}
+//
+// document.addEventListener('keydown', function(e) {
+//   if (e.keyCode == 82) {
+//     document.getElementById('ㄱ').play();
+//   }});
+
+document.addEventListener('keyup', function(e) {
   if (e.keyCode == 82) {
     document.getElementById('ㄱ').play();
   }
-  if (e.keyCode == 76) {
+  if (e.keyCode == 49) {
     document.getElementById('ㄲ').play();
   }
   if (e.keyCode == 83) {
@@ -254,11 +402,49 @@ document.addEventListener('keydown', function(e) {
 //     }
 // });
 
-
 $( ".header1" ).click(function() {
-  $( ".info1" ).toggle( "slow" );
+  $( ".info1" ).slideToggle( "slow" );
+});
+$( ".header2" ).click(function() {
+  $( ".info2" ).slideToggle( "slow" );
 });
 
-$( ".header2" ).click(function() {
-  $( ".info2" ).toggle( "slow" );
-});
+
+var audio1 = document.getElementById("ga");
+
+function playAudio() {
+  audio1.play();
+}
+
+var audio2 = document.getElementById("gam");
+
+function playAudio2() {
+  audio2.play();
+}
+
+var audio3 = document.getElementById("go");
+
+function playAudio3() {
+  audio3.play();
+}
+
+var audio4 = document.getElementById("doe");
+
+function playAudio4() {
+  audio4.play();
+}
+var audio5 = document.getElementById("ot");
+
+function playAudio5() {
+  audio5.play();
+}
+var audio6 = document.getElementById("gwon");
+
+function playAudio6() {
+  audio6.play();
+}
+var audio7 = document.getElementById("oi");
+
+function playAudio7() {
+  audio7.play();
+}

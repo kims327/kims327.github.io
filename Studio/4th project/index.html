@@ -24,7 +24,7 @@
       Pronunciation Chart
     </div>
     <div class="header2">
-      How to combine letters
+      Hangul Rules
     </div>
       </div>
 
@@ -115,18 +115,65 @@
 
         </div>
       </div>
+
+
       <div class="info2">
-<h1>Some Rules You Need to Know When Learning Korean</h1>
+
+  <h2>1.</h2>
+  <h2>Types of Combination</h2>
+<div class="rule1">
+<div><img src="rules/rule1.png" alt=""></div>
+<div>  <img src="rules/rule2.png" alt=""></div>
+<div>  <img src="rules/rule3.png" alt=""></div>
+
+<h2>ex)<a href="#" onclick="playAudio()"> 가</a></h2>
+<h2>ex)<a href="#" onclick="playAudio2()"> 감</a></h2>
+<h2>ex)<a href="#" onclick="playAudio3()"> 고</a></h2>
+
+<h2>g+a</h2>
+<h2>g+a+m</h2>
+<h2>g+o</h2>
+
+<div> <img src="rules/rule4.png" alt=""></div>
+<div> <img src="rules/rule5.png" alt=""></div>
+<div> <img src="rules/rule6.png" alt=""></div>
+
+<h2>ex) <a href="#" onclick="playAudio4()">되</a></h2>
+<h2>ex) <a href="#" onclick="playAudio5()">옷</a></h2>
+<h2>ex) <a href="#" onclick="playAudio6()">권</a></h2>
+
+<h2>d+o+e</h2>
+<h2>o+t</h2>
+<h2>g+won</h2>
+
+<!-- <div> <img src="rules/rule7.png" alt=""></div>
+<div> <img src="rules/rule8.png" alt=""></div>
+<div> </div>
+
+<h2>ex) 값</h2>
+<h2>ex) 붉</h2>
+
+<h2>g+a+p</h2>
+<h2>ex) 붉</h2> -->
+</div>
+<br>
+<div class="rule2">
+<h2>2. </h2>
+<h2>When a syllable has no actual initial consonant, the null initial ㅇ (called 이응, ieung) is used as a placeholder. (No placeholder is needed when there is no final.)</h2>
+<h1>ex)<a href="#" onclick="playAudio7()">오이</a> (oi, "cucumber")</h1>
+</div>
       </div>
 
 
-<div class="wrapper">
 
-    <h1>훈민정음</h1>
-    <h2>type in any letter</h2>
 
-       <input type="text" id="input">
-       <div id="result"></div>
+    <div class="wrapper flow">
+      <h1>훈민정음</h1>
+
+      <main id="root">
+        Type in a letter.
+      </main>
+</div>
 
        <audio id="ㄱ" controls style="display:none">
   <source src="ㄱ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
@@ -188,23 +235,30 @@
 <audio id="ㅛ" controls style="display:none">
 <source src="ㅛ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
 </audio>
+
 <audio id="ㅜ" controls style="display:none">
 <source src="ㅜ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
 </audio>
 <audio id="ㅠ" controls style="display:none">
 <source src="ㅠ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
 </audio>
-<!-- <audio id="ㅡ" controls style="display:none">
+<audio id="ㅡ" controls style="display:none">
 <source src="ㅡ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
-</audio> -->
+</audio>
 <audio id="ㅣ" controls style="display:none">
 <source src="ㅣ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
 </audio>
+<!-- <audio id="ㅡ" controls style="display:none">
+<source src="ㅡ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio> -->
 <audio id="ㅐ" controls style="display:none">
 <source src="ㅐ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
 </audio>
 <audio id="ㅔ" controls style="display:none">
 <source src="ㅔ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ㄲ" controls style="display:none">
+<source src="ㄲ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
 </audio>
 </div>
 <!-- <h1>Toggle 'em</h1>
@@ -213,9 +267,27 @@
 <!-- <audio id="ㅣ" controls style="display:none">
 <source src="ㅣ.m4a" type="audio/mpeg"> Your browser does not support the audio element.
 </audio> -->
-
-
-
+<audio id="ga" controls style="display:none">
+<source src="sound/가.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="gam" controls style="display:none">
+<source src="sound/감.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="go" controls style="display:none">
+<source src="sound/고.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="doe" controls style="display:none">
+<source src="sound/되.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="ot" controls style="display:none">
+<source src="sound/옷.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="gwon" controls style="display:none">
+<source src="sound/권.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
+<audio id="oi" controls style="display:none">
+<source src="sound/오이.m4a" type="audio/mpeg"> Your browser does not support the audio element.
+</audio>
 
        <!-- <audio id="sound" controls>
        <source src="Air purifier.m4a" type="audio/mpeg">
