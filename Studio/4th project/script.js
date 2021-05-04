@@ -4,22 +4,17 @@ const HANGUL_MAP = [
     character: "ㄱ",
     pronunciation: "g/k"
   },
-  {
-    match: "",
-    character: "ㄲ",
-    pronunciation: "kk"
-  },
+  // {
+  //   match: "",
+  //   character: "ㄲ",
+  //   pronunciation: "kk"
+  // },
   {
     match: "s",
     character: "ㄴ",
     pronunciation: "n"
   },
 
-  {
-    match: "il",
-    character: "ㅒ",
-    pronunciation: "yae"
-  },
   {
     match: "e",
     character: "ㄷ",
@@ -34,6 +29,11 @@ const HANGUL_MAP = [
     match: "a",
     character: "ㅁ",
     pronunciation: "m"
+  },
+  {
+    match: "q",
+    character: "ㅂ",
+    pronunciation: "b"
   },
 	{
 		match: "t",
@@ -134,9 +134,17 @@ const HANGUL_MAP = [
     match: "pp",
     character: "ㅖ",
     pronunciation: "eh"
-  }
-
-
+  },
+    {
+      match: "il",
+      character: "ㅒ",
+      pronunciation: "yae"
+    },
+      {
+        match: "kl",
+        character: "ㅐ",
+        pronunciation: "ae"
+      },
 ];
 
 const cache = {
