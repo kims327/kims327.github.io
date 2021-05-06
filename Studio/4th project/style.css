@@ -120,7 +120,8 @@ margin-top: 0px
 }
 .wrapper a{
   text-decoration: none;
-  color: black
+  color: black;
+
 }
 .wrapper a:hover{
   color: #ff8000
