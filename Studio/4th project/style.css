@@ -106,17 +106,38 @@ html {
 	min-height: 70%;
 	overflow: visible;
     font-size: 4em;
-
 }
 
+.wrapper h1{
+  font-size: 4em;
+  margin-bottom: 0px;
+  margin-top: 3rem
+}
+
+.wrapper h2{
+margin-top: 0px
+}
+.wrapper a{
+  text-decoration: none;
+  color: black
+}
+.wrapper a:hover{
+  color: #ff8000
+}
 figcaption{
   color: #ff8000
 }
 
 #root{
 width: 75vw;
-min-height: 50vh;
-border: solid;
+min-height: 10vh;
+border: solid 4px #ff8000;
+text-align: center;
+}
+
+#root p{
+  font-size:1em;
+  color: #919191;
 }
 
 html,
@@ -182,10 +203,13 @@ background-color: black
     font-size: 1em
   }
   .wrapper{
-    font-size: 3em
+    font-size: 1em
   }
-  .wrapper #root{
-    font-size: 0.5em
+  #root h3{
+    color: gray;
+    padding: 10px;
+    margin: 0px;
+    font-size: 1em
   }
   .rule1{
     display: grid;
@@ -204,7 +228,7 @@ background-color: black
 /* labtop */
 @media only screen and (min-width: 425px) {
   .wrapper{
-    font-size: 2em
+    font-size: 1.5em
   }
   .header{
     font-size: 1.5em
@@ -215,18 +239,26 @@ background-color: black
 }
 
 @media only screen and (min-width: 800px) {
+  .wrapper{
+    font-size: 2em
+  }
   .rule1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
   grid-template-rows: 30% 10%  10% 30% 10% 10%;
   }
-
+  #root h3{
+    color: gray;
+    padding: 10px;
+    margin: 0px;
+    font-size: 1em
+  }
 }
 
 @media only screen and (min-width: 1000px) {
   .wrapper{
-    font-size: 3em
+    font-size: 2.5em
   }
   .header{
     font-size: 2em
@@ -240,14 +272,15 @@ background-color: black
   }
 }
 @media only screen and (min-width: 1400px) {
+
+#root h3{
+  color: gray;
+  padding: 10px;
+  margin: 0px;
+  font-size: 1em
+}
 .wrapper{
-  font-size: 5em
-}
-.wrapper h1{
-  margin: 3%
-}
-.wrapper #root{
-  font-size: 0.8em
+  font-size: 2.5em
 }
   .header{
     font-size: 2em

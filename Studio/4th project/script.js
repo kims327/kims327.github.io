@@ -1,8 +1,8 @@
 const HANGUL_MAP = [
   {
-    match: "r",
-    character: "ㄱ",
-    pronunciation: "g/k"
+    match: "a",
+    character: "ㅏ",
+    pronunciation: "ah"
   },
   // {
   //   match: "",
@@ -10,141 +10,131 @@ const HANGUL_MAP = [
   //   pronunciation: "kk"
   // },
   {
-    match: "s",
-    character: "ㄴ",
-    pronunciation: "n"
+    match: "b",
+    character: "ㅂ",
+    pronunciation: "b"
   },
 
   {
-    match: "e",
+    match: "c",
+    character: "ㅊ",
+    pronunciation: "ch"
+  },
+  {
+    match: "d",
     character: "ㄷ",
     pronunciation: "d"
   },
   {
+    match: "e",
+    character: "ㅡ, ㅓ, ㅔ",
+    pronunciation: "eu, eo, e"
+  },
+  {
     match: "f",
-    character: "ㄹ",
-    pronunciation: "r/l"
-  },
-  {
-    match: "a",
-    character: "ㅁ",
-    pronunciation: "m"
-  },
-  {
-    match: "q",
-    character: "ㅂ",
-    pronunciation: "b"
+    character: "",
+    pronunciation: ""
   },
 	{
-		match: "t",
-		character: "ㅅ",
-		pronunciation: "s"
+		match: "g",
+		character: "ㄱ",
+		pronunciation: "g"
 	},
   {
-    match: "d",
-    character: "ㅇ",
-    pronunciation: "ng"
-  },
-  {
-    match: "w",
-    character: "ㅈ",
-    pronunciation: "j"
-  },
-  {
-		match: "c",
-		character: "ㅊ",
-		pronunciation: "ch"
-	},
-  {
-    match: "z",
-    character: "ㅋ",
-    pronunciation: "k"
-  },
-  {
-    match: "x",
-    character: "ㅌ",
-    pronunciation: "t"
-  },
-  {
-    match: "v",
-    character: "ㅍ",
-    pronunciation: "p"
-  },
-  {
-    match: "g",
+    match: "h",
     character: "ㅎ",
     pronunciation: "h"
   },
   {
-    match: "k",
-    character: "ㅏ",
-    pronunciation: "a"
-  },
-  {
     match: "i",
-    character: "ㅑ",
-    pronunciation: "ya"
+    character: "ㅣ",
+    pronunciation: "i"
   },
   {
-    match: "j",
-    character: "ㅓ",
-    pronunciation: "eo"
-  },
-  {
-    match: "u",
-    character: "ㅕ",
-    pronunciation: "yeo"
-  },
-  {
-		match: "h",
-		character: "ㅗ",
-		pronunciation: "o"
+		match: "j",
+		character: "ㅈ, ㅉ",
+		pronunciation: "j, jj"
 	},
   {
-		match: "y",
-		character: "ㅛ",
-		pronunciation: "yo"
+    match: "k",
+    character: "ㅋ, ㄲ",
+    pronunciation: "k, kk"
+  },
+  {
+    match: "l",
+    character: "ㄹ",
+    pronunciation: "l"
+  },
+  {
+    match: "m",
+    character: "ㅁ",
+    pronunciation: "m"
+  },
+  {
+    match: "n",
+    character: "ㄴ, ㅇ",
+    pronunciation: "n, ng"
+  },
+  {
+    match: "o",
+    character: "ㅗ, ㅚ",
+    pronunciation: "o, oe"
+  },
+  {
+    match: "p",
+    character: "ㅍ, ㅃ",
+    pronunciation: "p, pp"
+  },
+  {
+    match: "q",
+    character: "",
+    pronunciation: ""
+  },
+  {
+    match: "r",
+    character: "ㄹ",
+    pronunciation: "r"
+  },
+  {
+		match: "s",
+		character: "ㅅ, ㅆ",
+		pronunciation: "s, ss"
 	},
   {
-		match: "n",
+		match: "t",
+		character: "ㅌ, ㄸ",
+		pronunciation: "t, tt"
+	},
+  {
+		match: "u",
 		character: "ㅜ",
 		pronunciation: "u"
 	},
   {
-		match: "b",
-		character: "ㅠ",
-		pronunciation: "yu"
+		match: "v",
+		character: "",
+		pronunciation: ""
 	},
   {
-		match: "m",
-		character: "ㅡ",
-		pronunciation: "eu"
+		match: "w",
+		character: "ㅘ, ㅙ, ㅝ, ㅞ, ㅟ",
+		pronunciation: "wa, wae, wo, we, wi"
 	},
   {
-		match: "l",
-		character: "ㅣ",
-		pronunciation: "i"
+		match: "x",
+		character: "",
+		pronunciation: ""
 	},
 	{
-		match: "p",
-		character: "ㅔ",
-		pronunciation: "eh"
+		match: "y",
+		character: "ㅑ, ㅕ, ㅛ, ㅠ, ㅒ, ㅖ",
+		pronunciation: "ya, yeo, yo, yu, yae, ye"
 	},
   {
-    match: "pp",
-    character: "ㅖ",
-    pronunciation: "eh"
-  },
-    {
-      match: "il",
-      character: "ㅒ",
-      pronunciation: "yae"
-    },
-      {
-        match: "kl",
-        character: "ㅐ",
-        pronunciation: "ae"
-      },
+    match: "z",
+    character: "",
+    pronunciation: ""
+  }
 ];
 
 const cache = {
@@ -301,104 +291,69 @@ function createCharacterBlock(character, pronunciation) {
 //   }});
 
 document.addEventListener('keyup', function(e) {
-  if (e.keyCode == 82) {
-    document.getElementById('ㄱ').play();
-  }
-  if (e.keyCode == 49) {
-    document.getElementById('ㄲ').play();
-  }
-  if (e.keyCode == 83) {
-    document.getElementById('ㄴ').play();
-  }
-  if (e.keyCode == 69) {
-    document.getElementById('ㄷ').play();
-  }
-  // if (e.keyCode == 76) {
-  //   document.getElementById('ㄸ').play();
-  // }
-  if (e.keyCode == 70) {
-    document.getElementById('ㄹ').play();
-  }
+
   if (e.keyCode == 65) {
-    document.getElementById('ㅁ').play();
-  }
-  if (e.keyCode == 81) {
-    document.getElementById('ㅂ').play();
-  }
-  // if (e.keyCode == 76) {
-  //   document.getElementById('ㅃ').play();
-  // }
-  if (e.keyCode == 84) {
-    document.getElementById('ㅅ').play();
-  }
-  // if (e.keyCode == 76) {
-  //   document.getElementById('ㅆ').play();
-  // }
-  if (e.keyCode == 68) {
-    document.getElementById('ㅇ').play();
-  }
-  if (e.keyCode == 87) {
-    document.getElementById('ㅈ').play();
-  }
-  // if (e.keyCode == 76) {
-  //   document.getElementById('ㅉ').play();
-  // }
-  if (e.keyCode == 67) {
-    document.getElementById('ㅊ').play();
-  }
-  if (e.keyCode == 90) {
-    document.getElementById('ㅋ').play();
-  }
-  if (e.keyCode == 88) {
-    document.getElementById('ㅌ').play();
-  }
-  if (e.keyCode == 86) {
-    document.getElementById('ㅍ').play();
-  }
-  if (e.keyCode == 71) {
-    document.getElementById('ㅎ').play();
-  }
-  if (e.keyCode == 75) {
-    document.getElementById('ㅏ').play();
-  }
-  if (e.keyCode == 73) {
-    document.getElementById('ㅑ').play();
-  }
-  if (e.keyCode == 74) {
-    document.getElementById('ㅓ').play();
-  }
-  if (e.keyCode == 85) {
-    document.getElementById('ㅕ').play();
-  }
-  if (e.keyCode == 72) {
-    document.getElementById('ㅗ').play();
-  }
-  if (e.keyCode == 89) {
-    document.getElementById('ㅛ').play();
-  }
-  if (e.keyCode == 78) {
-    document.getElementById('ㅜ').play();
+    document.getElementById('a').play();
   }
   if (e.keyCode == 66) {
-    document.getElementById('ㅠ').play();
+    document.getElementById('b').play();
+  }
+  if (e.keyCode == 67) {
+    document.getElementById('c').play();
+  }
+  if (e.keyCode == 68) {
+    document.getElementById('d').play();
+  }
+  if (e.keyCode == 69) {
+    document.getElementById('e').play();
+  }
+  if (e.keyCode == 71) {
+    document.getElementById('g').play();
+  }
+  if (e.keyCode == 72) {
+    document.getElementById('h').play();
+  }
+  if (e.keyCode == 73) {
+    document.getElementById('i').play();
+  }
+  if (e.keyCode == 74) {
+    document.getElementById('j').play();
+  }
+  if (e.keyCode == 75) {
+    document.getElementById('k').play();
+  }
+  if (e.keyCode == 76) {
+    document.getElementById('l').play();
   }
   if (e.keyCode == 77) {
-    document.getElementById('ㅡ').play();
+    document.getElementById('m').play();
+  }
+  if (e.keyCode == 78) {
+    document.getElementById('n').play();
   }
   if (e.keyCode == 79) {
-    document.getElementById('ㅐ').play();
+    document.getElementById('o').play();
   }
-  // if (e.keyCode == 76) {
-  //   document.getElementById('ㅒ').play();
-  // }
   if (e.keyCode == 80) {
-    document.getElementById('ㅔ').play();
+    document.getElementById('p').play();
   }
-  // if (e.keyCode == 76) {
-  //   document.getElementById('ㅖ').play();
-  // }
-  if (e.keyCode == 76) {
-    document.getElementById('ㅣ').play();
+  if (e.keyCode == 82) {
+    document.getElementById('r').play();
+  }
+  if (e.keyCode == 83) {
+    document.getElementById('s').play();
+  }
+  if (e.keyCode == 84) {
+    document.getElementById('t').play();
+  }
+  if (e.keyCode == 85) {
+    document.getElementById('u').play();
+  }
+  if (e.keyCode == 87) {
+    document.getElementById('w').play();
+  }
+  if (e.keyCode == 89) {
+    document.getElementById('y').play();
   }
 });
 
@@ -456,3 +411,20 @@ var audio7 = document.getElementById("oi");
 function playAudio7() {
   audio7.play();
 }
+
+
+const element = document.querySelector('.header1')
+const element2 = document.querySelector('.info2')
+
+// always checking if the element is clicked, if so, do alert('hello')
+element.addEventListener("click", () => {
+element2.style.display = "none";
+});
+
+const header2 = document.querySelector('.header2')
+const one = document.querySelector('.info1')
+
+// always checking if the element is clicked, if so, do alert('hello')
+header2.addEventListener("click", () => {
+one.style.display = "none";
+});
