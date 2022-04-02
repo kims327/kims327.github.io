@@ -284,11 +284,6 @@ function createCharacterBlock(character, pronunciation) {
   block.append(c, p);
   return block;
 }
-//
-// document.addEventListener('keydown', function(e) {
-//   if (e.keyCode == 82) {
-//     document.getElementById('ㄱ').play();
-//   }});
 
 document.addEventListener('keyup', function(e) {
 
